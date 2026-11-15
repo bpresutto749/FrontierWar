@@ -6,8 +6,8 @@ credits; OpenAI's Junction credits are for Codex, not the API, so an OpenAI mode
 own API key.
 
 ```bash
-git clone <this repo> && cd corewar-env
-make task                      # generates harbor/corewar-hill and harbor/corewar-hill-public
+git clone https://github.com/bpresutto749/FrontierWar && cd FrontierWar
+# harbor/corewar-hill is in the repository; `make task` rebuilds it from the sources
 
 export OPENAI_API_KEY=...      # or GEMINI_API_KEY=... / ANTHROPIC_API_KEY=...
 
