@@ -909,7 +909,7 @@ def v_chart(t, dur):
 
 def v_table(t, dur):
     img, d, k = base(t, dur, {"gap", "diff"})
-    head(d, t, K4, f"Claude Opus: all three. {GPT_NAME}: none.", k)
+    head(d, t, K3, f"Claude Opus: all three. {GPT_NAME}: none.", k)
     a0 = ramp(t, 0.6, 0.6) * k
     text(d, (1050, 290), "Claude Opus 5.5", F("Inter-Bold.otf", 32), RED, a0, "mm")
     text(d, (1530, 290), GPT_NAME, F("Inter-Bold.otf", 32), AMBER, a0, "mm")
