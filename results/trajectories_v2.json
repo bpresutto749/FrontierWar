@@ -1,0 +1,168 @@
+{
+ "H1": [
+  {
+   "minute": 1.1,
+   "sparring": 0.2451,
+   "hill": 0.1647,
+   "reward": 0.0507
+  },
+  {
+   "minute": 6.2,
+   "sparring": 0.3774,
+   "hill": 0.3942,
+   "reward": 0.7274
+  },
+  {
+   "minute": 11.1,
+   "sparring": 0.4171,
+   "hill": 0.3924,
+   "reward": 0.7221
+  },
+  {
+   "minute": 19.3,
+   "sparring": 0.4361,
+   "hill": 0.4008,
+   "reward": 0.7469
+  }
+ ],
+ "H2": [
+  {
+   "minute": 0.6,
+   "sparring": 0.2102,
+   "hill": 0.1475,
+   "reward": 0.0
+  },
+  {
+   "minute": 2.8,
+   "sparring": 0.3411,
+   "hill": 0.3297,
+   "reward": 0.5372
+  },
+  {
+   "minute": 9.5,
+   "sparring": 0.3685,
+   "hill": 0.2667,
+   "reward": 0.3515
+  },
+  {
+   "minute": 12.4,
+   "sparring": 0.3987,
+   "hill": 0.3023,
+   "reward": 0.4565
+  },
+  {
+   "minute": 16.6,
+   "sparring": 0.4102,
+   "hill": 0.3362,
+   "reward": 0.5564
+  },
+  {
+   "minute": 18.0,
+   "sparring": 0.4755,
+   "hill": 0.3192,
+   "reward": 0.5063
+  },
+  {
+   "minute": 21.8,
+   "sparring": 0.4875,
+   "hill": 0.3187,
+   "reward": 0.5048
+  },
+  {
+   "minute": 28.5,
+   "sparring": 0.4875,
+   "hill": 0.3187,
+   "reward": 0.5048
+  }
+ ],
+ "H3": [
+  {
+   "minute": 0.6,
+   "sparring": 0.2102,
+   "hill": 0.1475,
+   "reward": 0.0
+  },
+  {
+   "minute": 6.2,
+   "sparring": 0.3165,
+   "hill": 0.3311,
+   "reward": 0.5414
+  },
+  {
+   "minute": 13.5,
+   "sparring": 0.3473,
+   "hill": 0.2926,
+   "reward": 0.4279
+  },
+  {
+   "minute": 23.3,
+   "sparring": 0.3604,
+   "hill": 0.3067,
+   "reward": 0.4694
+  },
+  {
+   "minute": 28.7,
+   "sparring": 0.3756,
+   "hill": 0.3086,
+   "reward": 0.475
+  }
+ ],
+ "H4": [
+  {
+   "minute": 1.1,
+   "sparring": 0.2434,
+   "hill": 0.1983,
+   "reward": 0.1498
+  },
+  {
+   "minute": 2.7,
+   "sparring": 0.318,
+   "hill": 0.3448,
+   "reward": 0.5818
+  },
+  {
+   "minute": 11.1,
+   "sparring": 0.3611,
+   "hill": 0.3521,
+   "reward": 0.6033
+  },
+  {
+   "minute": 13.1,
+   "sparring": 0.3875,
+   "hill": 0.3769,
+   "reward": 0.6764
+  },
+  {
+   "minute": 29.4,
+   "sparring": 0.4101,
+   "hill": 0.3469,
+   "reward": 0.588
+  },
+  {
+   "minute": 30.1,
+   "sparring": 0.4213,
+   "hill": 0.3291,
+   "reward": 0.5355
+  }
+ ],
+ "H5": [
+  {
+   "minute": 1.4,
+   "sparring": 0.3597,
+   "hill": 0.3783,
+   "reward": 0.6805
+  },
+  {
+   "minute": 6.8,
+   "sparring": 0.3885,
+   "hill": 0.3735,
+   "reward": 0.6664
+  },
+  {
+   "minute": 18.3,
+   "sparring": 0.4092,
+   "hill": 0.3884,
+   "reward": 0.7103
+  }
+ ]
+}

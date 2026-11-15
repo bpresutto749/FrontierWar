@@ -1,0 +1,51 @@
+schema_version = "1.4"
+# variant: corewar-hill-public
+artifacts = [
+  { source = "/results/submission.red", service = "arena", destination = "submission.red" },
+  { source = "/results/events.jsonl", service = "arena", destination = "events.jsonl" },
+  { source = "/results/history", service = "arena", destination = "history" },
+  { source = "/app/submission.red", destination = "app_submission.red" },
+]
+
+[task]
+name = "junction-afterquery/corewar-hill"
+version = "1.0.0"
+description = "Write an original Redcode warrior that holds its own against a hidden hill of 30 human-written King-of-the-Hill warriors."
+keywords = ["core-war", "redcode", "adversarial-program-synthesis", "generalization", "open-ended-search"]
+
+[metadata]
+category = "adversarial program synthesis"
+difficulty_explanation = "With an exact simulator, a strategy primer and 30 black-box sparring warriors drawn from the same ladder as the hidden hill, frontier agents converge on one tuned archetype (a lone paper, stone or scanner), abandon composites, stop with budget left, and stay below a human expert warrior even on the opponents they can see. Scores are deterministic (pMARS fixed position series)."
+reference = "Toxic by John Metcalf, #1 of 264 human warriors on the CodeClash CC:Ladder Elo ranking (chosen before any agent run)"
+reference_hill_score = 0.486
+
+[verifier]
+timeout_sec = 900.0
+environment_mode = "separate"
+# public variant: the verifier inherits the public baseline, because enforcing no-network
+# needs Harbor's egress control, which this variant exists to do without
+
+[agent]
+timeout_sec = 2700.0
+# Public-network variant, for Docker hosts where Harbor's egress control is
+# unavailable. The agent could download published warriors here: see EXPLOITS.md.
+network_mode = "public"
+
+[environment]
+cpus = 2
+memory_mb = 4096
+network_mode = "public"
+build_timeout_sec = 900.0
+os = "linux"
+
+[[environment.mcp_servers]]
+name = "corewar"
+transport = "streamable-http"
+url = "http://arena:8000/mcp"
+
+[environment.healthcheck]
+command = "python3 -c \"import urllib.request; urllib.request.urlopen('http://arena:8000/health', timeout=3)\""
+interval_sec = 2.0
+start_period_sec = 60.0
+start_interval_sec = 2.0
+retries = 3

@@ -1,0 +1,42 @@
+[
+  {
+    "source": "/logs/artifacts",
+    "destination": "artifacts/logs/artifacts",
+    "type": "directory",
+    "status": "ok",
+    "service": null,
+    "exclude": []
+  },
+  {
+    "source": "/app/submission.red",
+    "destination": "artifacts/app_submission.red",
+    "type": "file",
+    "status": "ok",
+    "service": null,
+    "exclude": []
+  },
+  {
+    "source": "/results/submission.red",
+    "destination": "artifacts/submission.red",
+    "type": "file",
+    "status": "ok",
+    "service": "arena",
+    "exclude": []
+  },
+  {
+    "source": "/results/events.jsonl",
+    "destination": "artifacts/events.jsonl",
+    "type": "file",
+    "status": "ok",
+    "service": "arena",
+    "exclude": []
+  },
+  {
+    "source": "/results/history",
+    "destination": "artifacts/history",
+    "type": "directory",
+    "status": "ok",
+    "service": "arena",
+    "exclude": []
+  }
+]

@@ -1,0 +1,12 @@
+{
+    "task": {
+        "path": "harbor/corewar-hill"
+    },
+    "trial_name": "corewar-hill__mDmMtQB",
+    "trials_dir": "jobs/2026-11-14__14-24-22",
+    "agent": {
+        "name": "opencode",
+        "model_name": "anthropic/claude-opus-5-5"
+    },
+    "job_id": "c96f2143-97ab-4b7c-bdd3-56c99103638f"
+}

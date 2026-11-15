@@ -1,0 +1,231 @@
+{
+ "hill_size": 30,
+ "rounds": 500,
+ "source_file": "/results/submission.red",
+ "sha256": "de4123e742638f50563d5576e2caeff66011f65de248a3f63e5f91e89b89f4ed",
+ "length": 48,
+ "nearest_published": {
+  "copy": false,
+  "exact": 0.043,
+  "struct": 0.594,
+  "warrior": "hector2"
+ },
+ "nearest_published_similarity": 0.594,
+ "reference_exemption": false,
+ "hill_score": 0.429911,
+ "reward_unclipped": 0.832722,
+ "per_opponent": {
+  "abomination": {
+   "wins": 151,
+   "losses": 85,
+   "ties": 264,
+   "points": 0.478,
+   "error": null
+  },
+  "alladinscave": {
+   "wins": 201,
+   "losses": 219,
+   "ties": 80,
+   "points": 0.4553,
+   "error": null
+  },
+  "behemot": {
+   "wins": 196,
+   "losses": 176,
+   "ties": 128,
+   "points": 0.4773,
+   "error": null
+  },
+  "blizzard": {
+   "wins": 58,
+   "losses": 22,
+   "ties": 420,
+   "points": 0.396,
+   "error": null
+  },
+  "bluecandle": {
+   "wins": 11,
+   "losses": 42,
+   "ties": 447,
+   "points": 0.32,
+   "error": null
+  },
+  "cannonade": {
+   "wins": 59,
+   "losses": 5,
+   "ties": 436,
+   "points": 0.4087,
+   "error": null
+  },
+  "chameleon": {
+   "wins": 182,
+   "losses": 140,
+   "ties": 178,
+   "points": 0.4827,
+   "error": null
+  },
+  "crimp": {
+   "wins": 237,
+   "losses": 210,
+   "ties": 53,
+   "points": 0.5093,
+   "error": null
+  },
+  "electrichead": {
+   "wins": 149,
+   "losses": 241,
+   "ties": 110,
+   "points": 0.3713,
+   "error": null
+  },
+  "elvenking": {
+   "wins": 50,
+   "losses": 54,
+   "ties": 396,
+   "points": 0.364,
+   "error": null
+  },
+  "evolcap66": {
+   "wins": 13,
+   "losses": 10,
+   "ties": 477,
+   "points": 0.344,
+   "error": null
+  },
+  "leviathan": {
+   "wins": 169,
+   "losses": 81,
+   "ties": 250,
+   "points": 0.5047,
+   "error": null
+  },
+  "nightofthelivingdead": {
+   "wins": 67,
+   "losses": 78,
+   "ties": 355,
+   "points": 0.3707,
+   "error": null
+  },
+  "perseus": {
+   "wins": 138,
+   "losses": 268,
+   "ties": 94,
+   "points": 0.3387,
+   "error": null
+  },
+  "probe": {
+   "wins": 143,
+   "losses": 210,
+   "ties": 147,
+   "points": 0.384,
+   "error": null
+  },
+  "rave": {
+   "wins": 162,
+   "losses": 157,
+   "ties": 181,
+   "points": 0.4447,
+   "error": null
+  },
+  "returnofthejedimp": {
+   "wins": 23,
+   "losses": 62,
+   "ties": 415,
+   "points": 0.3227,
+   "error": null
+  },
+  "returnofthependragon": {
+   "wins": 41,
+   "losses": 36,
+   "ties": 423,
+   "points": 0.364,
+   "error": null
+  },
+  "revengeofthepapers": {
+   "wins": 27,
+   "losses": 33,
+   "ties": 440,
+   "points": 0.3473,
+   "error": null
+  },
+  "revivalfire": {
+   "wins": 69,
+   "losses": 10,
+   "ties": 421,
+   "points": 0.4187,
+   "error": null
+  },
+  "spiritualblackdimension": {
+   "wins": 67,
+   "losses": 81,
+   "ties": 352,
+   "points": 0.3687,
+   "error": null
+  },
+  "thefugitive": {
+   "wins": 12,
+   "losses": 43,
+   "ties": 445,
+   "points": 0.3207,
+   "error": null
+  },
+  "thermite10": {
+   "wins": 207,
+   "losses": 151,
+   "ties": 142,
+   "points": 0.5087,
+   "error": null
+  },
+  "tornado30": {
+   "wins": 149,
+   "losses": 118,
+   "ties": 233,
+   "points": 0.4533,
+   "error": null
+  },
+  "trinity": {
+   "wins": 331,
+   "losses": 8,
+   "ties": 161,
+   "points": 0.7693,
+   "error": null
+  },
+  "twilightpitsv60": {
+   "wins": 420,
+   "losses": 6,
+   "ties": 74,
+   "points": 0.8893,
+   "error": null
+  },
+  "vamp02b": {
+   "wins": 195,
+   "losses": 202,
+   "ties": 103,
+   "points": 0.4587,
+   "error": null
+  },
+  "vampsareback02": {
+   "wins": 136,
+   "losses": 261,
+   "ties": 103,
+   "points": 0.3407,
+   "error": null
+  },
+  "xenosmilus": {
+   "wins": 140,
+   "losses": 326,
+   "ties": 34,
+   "points": 0.3027,
+   "error": null
+  },
+  "ziggy": {
+   "wins": 67,
+   "losses": 59,
+   "ties": 374,
+   "points": 0.3833,
+   "error": null
+  }
+ },
+ "reason": "scored",
+ "seconds": 16.1
+}

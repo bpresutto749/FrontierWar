@@ -1,0 +1,138 @@
+{
+ "C1": [
+  {
+   "minute": 0.4,
+   "sparring": 0.3902,
+   "hill": 0.3908,
+   "reward": 0.7173
+  },
+  {
+   "minute": 18.8,
+   "sparring": 0.3954,
+   "hill": 0.3868,
+   "reward": 0.7057
+  },
+  {
+   "minute": 21.1,
+   "sparring": 0.418,
+   "hill": 0.3674,
+   "reward": 0.6484
+  },
+  {
+   "minute": 28.0,
+   "sparring": 0.4274,
+   "hill": 0.3649,
+   "reward": 0.6411
+  },
+  {
+   "minute": 30.5,
+   "sparring": 0.437,
+   "hill": 0.3734,
+   "reward": 0.666
+  }
+ ],
+ "C2": [
+  {
+   "minute": 0.5,
+   "sparring": 0.3298,
+   "hill": 0.349,
+   "reward": 0.5941
+  },
+  {
+   "minute": 8.1,
+   "sparring": 0.3546,
+   "hill": 0.3772,
+   "reward": 0.6773
+  },
+  {
+   "minute": 14.2,
+   "sparring": 0.3716,
+   "hill": 0.3878,
+   "reward": 0.7085
+  },
+  {
+   "minute": 18.8,
+   "sparring": 0.3825,
+   "hill": 0.3987,
+   "reward": 0.7408
+  }
+ ],
+ "C3": [
+  {
+   "minute": 1.8,
+   "sparring": 0.2727,
+   "hill": 0.307,
+   "reward": 0.4702
+  },
+  {
+   "minute": 2.2,
+   "sparring": 0.3503,
+   "hill": 0.3672,
+   "reward": 0.6478
+  },
+  {
+   "minute": 13.3,
+   "sparring": 0.3838,
+   "hill": 0.4114,
+   "reward": 0.7782
+  },
+  {
+   "minute": 29.7,
+   "sparring": 0.3881,
+   "hill": 0.3822,
+   "reward": 0.6919
+  }
+ ],
+ "C4": [
+  {
+   "minute": 0.4,
+   "sparring": 0.3342,
+   "hill": 0.3257,
+   "reward": 0.5254
+  },
+  {
+   "minute": 4.4,
+   "sparring": 0.3453,
+   "hill": 0.3489,
+   "reward": 0.594
+  },
+  {
+   "minute": 17.8,
+   "sparring": 0.3878,
+   "hill": 0.3941,
+   "reward": 0.7272
+  }
+ ],
+ "C5": [
+  {
+   "minute": 2.2,
+   "sparring": 0.3114,
+   "hill": 0.3139,
+   "reward": 0.4908
+  },
+  {
+   "minute": 3.2,
+   "sparring": 0.411,
+   "hill": 0.3499,
+   "reward": 0.5968
+  },
+  {
+   "minute": 6.0,
+   "sparring": 0.4716,
+   "hill": 0.3853,
+   "reward": 0.7012
+  },
+  {
+   "minute": 10.7,
+   "sparring": 0.4846,
+   "hill": 0.3875,
+   "reward": 0.7076
+  },
+  {
+   "minute": 12.5,
+   "sparring": 0.4888,
+   "hill": 0.3983,
+   "reward": 0.7396
+  }
+ ]
+}

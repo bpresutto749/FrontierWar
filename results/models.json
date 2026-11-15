@@ -1,0 +1,2339 @@
+{
+ "reference": {
+  "label": "Toxic",
+  "hill": 0.486644,
+  "wlt": [
+   4033,
+   1167,
+   9800
+  ],
+  "over100": 2,
+  "qscan": true,
+  "practice": 0.5068,
+  "drop": -0.02
+ },
+ "runs": [
+  {
+   "label": "C1",
+   "model": "Claude Opus 5.5",
+   "task": "v4",
+   "trial": "runs/harbor/v4-opencode-opus-5.5/corewar-hill__vYa5MUj",
+   "sha256": "be981747e746f7181118f0c0d2c863c71a6e647e74d8fd3871a014d32271e4be",
+   "agent_minutes": 32.7,
+   "ended_by": "NonZeroAgentExitCodeError",
+   "reward": 0.665968,
+   "hill": 0.373356,
+   "practice": 0.437,
+   "drop": -0.064,
+   "qscan": false,
+   "length": 12,
+   "submissions": 5,
+   "last_submission_minute": 30.5,
+   "programs_tested": 616,
+   "battles": 637,
+   "copy_at_scoring": {
+    "copy": false,
+    "exact": 0.0,
+    "struct": 0.421,
+    "warrior": "heremscimitar"
+   },
+   "copy_current_gate": {
+    "copy": false,
+    "exact": 0.0,
+    "struct": 0.421,
+    "warrior": "heremscimitar"
+   },
+   "wlt": [
+    4956,
+    8111,
+    1933
+   ],
+   "over100": 28,
+   "better_than_toxic": 8,
+   "per_opponent": {
+    "abomination": [
+     201,
+     289,
+     10
+    ],
+    "alladinscave": [
+     57,
+     440,
+     3
+    ],
+    "behemot": [
+     205,
+     265,
+     30
+    ],
+    "blizzard": [
+     20,
+     324,
+     156
+    ],
+    "bluecandle": [
+     42,
+     341,
+     117
+    ],
+    "cannonade": [
+     139,
+     207,
+     154
+    ],
+    "chameleon": [
+     171,
+     269,
+     60
+    ],
+    "crimp": [
+     200,
+     265,
+     35
+    ],
+    "electrichead": [
+     220,
+     229,
+     51
+    ],
+    "elvenking": [
+     141,
+     276,
+     83
+    ],
+    "evolcap66": [
+     128,
+     151,
+     221
+    ],
+    "leviathan": [
+     260,
+     234,
+     6
+    ],
+    "nightofthelivingdead": [
+     217,
+     175,
+     108
+    ],
+    "perseus": [
+     83,
+     405,
+     12
+    ],
+    "probe": [
+     183,
+     305,
+     12
+    ],
+    "rave": [
+     256,
+     237,
+     7
+    ],
+    "returnofthejedimp": [
+     11,
+     214,
+     275
+    ],
+    "returnofthependragon": [
+     71,
+     261,
+     168
+    ],
+    "revengeofthepapers": [
+     24,
+     443,
+     33
+    ],
+    "revivalfire": [
+     179,
+     246,
+     75
+    ],
+    "spiritualblackdimension": [
+     31,
+     459,
+     10
+    ],
+    "thefugitive": [
+     25,
+     314,
+     161
+    ],
+    "thermite10": [
+     389,
+     90,
+     21
+    ],
+    "tornado30": [
+     365,
+     106,
+     29
+    ],
+    "trinity": [
+     380,
+     75,
+     45
+    ],
+    "twilightpitsv60": [
+     263,
+     234,
+     3
+    ],
+    "vamp02b": [
+     184,
+     303,
+     13
+    ],
+    "vampsareback02": [
+     231,
+     261,
+     8
+    ],
+    "xenosmilus": [
+     236,
+     262,
+     2
+    ],
+    "ziggy": [
+     44,
+     431,
+     25
+    ]
+   }
+  },
+  {
+   "label": "C2",
+   "model": "Claude Opus 5.5",
+   "task": "v4",
+   "trial": "runs/harbor/v4-opencode-opus-5.5/corewar-hill__xtDXjV4",
+   "sha256": "6cf389b2e4cc5c091220c39a7a6814a89cde95fa6d4ab6ea3de0e87e0d49bf02",
+   "agent_minutes": 22.9,
+   "ended_by": "NonZeroAgentExitCodeError",
+   "reward": 0.740794,
+   "hill": 0.398733,
+   "practice": 0.3825,
+   "drop": 0.016,
+   "qscan": false,
+   "length": 21,
+   "submissions": 4,
+   "last_submission_minute": 18.8,
+   "programs_tested": 471,
+   "battles": 489,
+   "copy_at_scoring": {
+    "copy": false,
+    "exact": 0.095,
+    "struct": 0.5,
+    "warrior": "jackinthebox"
+   },
+   "copy_current_gate": {
+    "copy": false,
+    "exact": 0.381,
+    "struct": 0.105,
+    "warrior": "firestorm"
+   },
+   "wlt": [
+    4275,
+    5607,
+    5118
+   ],
+   "over100": 17,
+   "better_than_toxic": 10,
+   "per_opponent": {
+    "abomination": [
+     346,
+     69,
+     85
+    ],
+    "alladinscave": [
+     119,
+     325,
+     56
+    ],
+    "behemot": [
+     166,
+     262,
+     72
+    ],
+    "blizzard": [
+     1,
+     20,
+     479
+    ],
+    "bluecandle": [
+     137,
+     158,
+     205
+    ],
+    "cannonade": [
+     284,
+     28,
+     188
+    ],
+    "chameleon": [
+     134,
+     290,
+     76
+    ],
+    "crimp": [
+     119,
+     347,
+     34
+    ],
+    "electrichead": [
+     110,
+     350,
+     40
+    ],
+    "elvenking": [
+     173,
+     91,
+     236
+    ],
+    "evolcap66": [
+     15,
+     186,
+     299
+    ],
+    "leviathan": [
+     326,
+     84,
+     90
+    ],
+    "nightofthelivingdead": [
+     78,
+     33,
+     389
+    ],
+    "perseus": [
+     85,
+     362,
+     53
+    ],
+    "probe": [
+     150,
+     271,
+     79
+    ],
+    "rave": [
+     79,
+     399,
+     22
+    ],
+    "returnofthejedimp": [
+     3,
+     60,
+     437
+    ],
+    "returnofthependragon": [
+     273,
+     91,
+     136
+    ],
+    "revengeofthepapers": [
+     11,
+     58,
+     431
+    ],
+    "revivalfire": [
+     188,
+     44,
+     268
+    ],
+    "spiritualblackdimension": [
+     18,
+     276,
+     206
+    ],
+    "thefugitive": [
+     2,
+     35,
+     463
+    ],
+    "thermite10": [
+     126,
+     294,
+     80
+    ],
+    "tornado30": [
+     157,
+     222,
+     121
+    ],
+    "trinity": [
+     370,
+     54,
+     76
+    ],
+    "twilightpitsv60": [
+     453,
+     19,
+     28
+    ],
+    "vamp02b": [
+     134,
+     314,
+     52
+    ],
+    "vampsareback02": [
+     110,
+     310,
+     80
+    ],
+    "xenosmilus": [
+     71,
+     404,
+     25
+    ],
+    "ziggy": [
+     37,
+     151,
+     312
+    ]
+   }
+  },
+  {
+   "label": "C3",
+   "model": "Claude Opus 5.5",
+   "task": "v4",
+   "trial": "runs/harbor/v4-opencode-opus-5.5/corewar-hill__47Js9Lc",
+   "sha256": "80b55be5b055645e9cb38f4b8a008ee28e063db5172196e1ac97ad69b08e5cef",
+   "agent_minutes": 29.8,
+   "ended_by": "NonZeroAgentExitCodeError",
+   "reward": 0.691915,
+   "hill": 0.382156,
+   "practice": 0.3881,
+   "drop": -0.006,
+   "qscan": false,
+   "length": 21,
+   "submissions": 4,
+   "last_submission_minute": 29.7,
+   "programs_tested": 527,
+   "battles": 568,
+   "copy_at_scoring": {
+    "copy": false,
+    "exact": 0.143,
+    "struct": 0.333,
+    "warrior": "thefugitive"
+   },
+   "copy_current_gate": {
+    "copy": false,
+    "exact": 0.0,
+    "struct": 0.278,
+    "warrior": "tornado30"
+   },
+   "wlt": [
+    2629,
+    3061,
+    9310
+   ],
+   "over100": 13,
+   "better_than_toxic": 2,
+   "per_opponent": {
+    "abomination": [
+     51,
+     68,
+     381
+    ],
+    "alladinscave": [
+     152,
+     206,
+     142
+    ],
+    "behemot": [
+     165,
+     125,
+     210
+    ],
+    "blizzard": [
+     10,
+     3,
+     487
+    ],
+    "bluecandle": [
+     3,
+     90,
+     407
+    ],
+    "cannonade": [
+     9,
+     17,
+     474
+    ],
+    "chameleon": [
+     99,
+     191,
+     210
+    ],
+    "crimp": [
+     174,
+     211,
+     115
+    ],
+    "electrichead": [
+     167,
+     180,
+     153
+    ],
+    "elvenking": [
+     12,
+     99,
+     389
+    ],
+    "evolcap66": [
+     4,
+     19,
+     477
+    ],
+    "leviathan": [
+     107,
+     71,
+     322
+    ],
+    "nightofthelivingdead": [
+     12,
+     30,
+     458
+    ],
+    "perseus": [
+     138,
+     215,
+     147
+    ],
+    "probe": [
+     130,
+     192,
+     178
+    ],
+    "rave": [
+     140,
+     128,
+     232
+    ],
+    "returnofthejedimp": [
+     4,
+     11,
+     485
+    ],
+    "returnofthependragon": [
+     11,
+     30,
+     459
+    ],
+    "revengeofthepapers": [
+     2,
+     8,
+     490
+    ],
+    "revivalfire": [
+     32,
+     38,
+     430
+    ],
+    "spiritualblackdimension": [
+     17,
+     39,
+     444
+    ],
+    "thefugitive": [
+     2,
+     13,
+     485
+    ],
+    "thermite10": [
+     164,
+     117,
+     219
+    ],
+    "tornado30": [
+     44,
+     145,
+     311
+    ],
+    "trinity": [
+     220,
+     22,
+     258
+    ],
+    "twilightpitsv60": [
+     370,
+     3,
+     127
+    ],
+    "vamp02b": [
+     152,
+     208,
+     140
+    ],
+    "vampsareback02": [
+     137,
+     214,
+     149
+    ],
+    "xenosmilus": [
+     79,
+     329,
+     92
+    ],
+    "ziggy": [
+     22,
+     39,
+     439
+    ]
+   }
+  },
+  {
+   "label": "C4",
+   "model": "Claude Opus 5.5",
+   "task": "v4",
+   "trial": "runs/harbor/v4-opencode-opus-5.5/corewar-hill__RNStjor",
+   "sha256": "1a66de682074c7c952f3a937837b50263700ecf566a0c8fe3973961f6bb9f905",
+   "agent_minutes": 24.1,
+   "ended_by": "NonZeroAgentExitCodeError",
+   "reward": 0.727166,
+   "hill": 0.394111,
+   "practice": 0.3878,
+   "drop": 0.006,
+   "qscan": false,
+   "length": 37,
+   "submissions": 3,
+   "last_submission_minute": 17.8,
+   "programs_tested": 297,
+   "battles": 330,
+   "copy_at_scoring": {
+    "copy": false,
+    "exact": 0.455,
+    "struct": 0.0,
+    "warrior": "impsimpsimps"
+   },
+   "copy_current_gate": {
+    "copy": false,
+    "exact": 0.455,
+    "struct": 0.0,
+    "warrior": "impsimpsimps"
+   },
+   "wlt": [
+    2970,
+    3205,
+    8825
+   ],
+   "over100": 12,
+   "better_than_toxic": 4,
+   "per_opponent": {
+    "abomination": [
+     85,
+     67,
+     348
+    ],
+    "alladinscave": [
+     117,
+     244,
+     139
+    ],
+    "behemot": [
+     135,
+     159,
+     206
+    ],
+    "blizzard": [
+     0,
+     0,
+     500
+    ],
+    "bluecandle": [
+     2,
+     97,
+     401
+    ],
+    "cannonade": [
+     26,
+     4,
+     470
+    ],
+    "chameleon": [
+     134,
+     197,
+     169
+    ],
+    "crimp": [
+     232,
+     38,
+     230
+    ],
+    "electrichead": [
+     143,
+     254,
+     103
+    ],
+    "elvenking": [
+     10,
+     100,
+     390
+    ],
+    "evolcap66": [
+     5,
+     37,
+     458
+    ],
+    "leviathan": [
+     154,
+     73,
+     273
+    ],
+    "nightofthelivingdead": [
+     16,
+     57,
+     427
+    ],
+    "perseus": [
+     94,
+     286,
+     120
+    ],
+    "probe": [
+     152,
+     132,
+     216
+    ],
+    "rave": [
+     131,
+     213,
+     156
+    ],
+    "returnofthejedimp": [
+     1,
+     23,
+     476
+    ],
+    "returnofthependragon": [
+     13,
+     13,
+     474
+    ],
+    "revengeofthepapers": [
+     1,
+     15,
+     484
+    ],
+    "revivalfire": [
+     46,
+     100,
+     354
+    ],
+    "spiritualblackdimension": [
+     33,
+     81,
+     386
+    ],
+    "thefugitive": [
+     0,
+     16,
+     484
+    ],
+    "thermite10": [
+     142,
+     103,
+     255
+    ],
+    "tornado30": [
+     99,
+     129,
+     272
+    ],
+    "trinity": [
+     320,
+     6,
+     174
+    ],
+    "twilightpitsv60": [
+     426,
+     2,
+     72
+    ],
+    "vamp02b": [
+     178,
+     179,
+     143
+    ],
+    "vampsareback02": [
+     146,
+     181,
+     173
+    ],
+    "xenosmilus": [
+     94,
+     369,
+     37
+    ],
+    "ziggy": [
+     35,
+     30,
+     435
+    ]
+   }
+  },
+  {
+   "label": "C5",
+   "model": "Claude Opus 5.5",
+   "task": "v4",
+   "trial": "runs/harbor/v4-opencode-opus-5.5/corewar-hill__X7kqQnj",
+   "sha256": "c0c914d63a0e074cbd5da982c4073a0d6c890978bd01ace4c0cfe975b424a98a",
+   "agent_minutes": 16.5,
+   "ended_by": "NonZeroAgentExitCodeError",
+   "reward": 0.739615,
+   "hill": 0.398333,
+   "practice": 0.4888,
+   "drop": -0.09,
+   "qscan": false,
+   "length": 10,
+   "submissions": 5,
+   "last_submission_minute": 12.5,
+   "programs_tested": 165,
+   "battles": 171,
+   "copy_at_scoring": {
+    "copy": false,
+    "exact": 0.111,
+    "struct": 0.5,
+    "warrior": "stalker"
+   },
+   "copy_current_gate": {
+    "copy": false,
+    "exact": 0.111,
+    "struct": 0.5,
+    "warrior": "stalker"
+   },
+   "wlt": [
+    5380,
+    7835,
+    1785
+   ],
+   "over100": 28,
+   "better_than_toxic": 8,
+   "per_opponent": {
+    "abomination": [
+     160,
+     336,
+     4
+    ],
+    "alladinscave": [
+     214,
+     256,
+     30
+    ],
+    "behemot": [
+     182,
+     305,
+     13
+    ],
+    "blizzard": [
+     0,
+     353,
+     147
+    ],
+    "bluecandle": [
+     236,
+     199,
+     65
+    ],
+    "cannonade": [
+     264,
+     71,
+     165
+    ],
+    "chameleon": [
+     225,
+     247,
+     28
+    ],
+    "crimp": [
+     240,
+     255,
+     5
+    ],
+    "electrichead": [
+     211,
+     264,
+     25
+    ],
+    "elvenking": [
+     177,
+     204,
+     119
+    ],
+    "evolcap66": [
+     143,
+     165,
+     192
+    ],
+    "leviathan": [
+     279,
+     213,
+     8
+    ],
+    "nightofthelivingdead": [
+     190,
+     207,
+     103
+    ],
+    "perseus": [
+     96,
+     398,
+     6
+    ],
+    "probe": [
+     190,
+     298,
+     12
+    ],
+    "rave": [
+     250,
+     240,
+     10
+    ],
+    "returnofthejedimp": [
+     1,
+     212,
+     287
+    ],
+    "returnofthependragon": [
+     90,
+     202,
+     208
+    ],
+    "revengeofthepapers": [
+     24,
+     450,
+     26
+    ],
+    "revivalfire": [
+     196,
+     288,
+     16
+    ],
+    "spiritualblackdimension": [
+     51,
+     445,
+     4
+    ],
+    "thefugitive": [
+     18,
+     342,
+     140
+    ],
+    "thermite10": [
+     281,
+     174,
+     45
+    ],
+    "tornado30": [
+     201,
+     250,
+     49
+    ],
+    "trinity": [
+     394,
+     76,
+     30
+    ],
+    "twilightpitsv60": [
+     237,
+     258,
+     5
+    ],
+    "vamp02b": [
+     257,
+     222,
+     21
+    ],
+    "vampsareback02": [
+     222,
+     272,
+     6
+    ],
+    "xenosmilus": [
+     321,
+     179,
+     0
+    ],
+    "ziggy": [
+     30,
+     454,
+     16
+    ]
+   }
+  },
+  {
+   "label": "G1",
+   "model": "GPT-6.1 sol",
+   "task": "v4.1",
+   "trial": "runs/harbor/v4-opencode-gpt-6.1/corewar-hill__kGJPs6d",
+   "sha256": "970d3faeed7bd3f5a68e431e694ddc6a792320c64e5cb0a1324bac3ca8cff0a1",
+   "agent_minutes": 45.0,
+   "ended_by": "AgentTimeoutError",
+   "reward": 0.899292,
+   "hill": 0.452489,
+   "practice": 0.4679,
+   "drop": -0.015,
+   "qscan": false,
+   "length": 20,
+   "submissions": 5,
+   "last_submission_minute": 44.4,
+   "programs_tested": 484,
+   "battles": 561,
+   "copy_at_scoring": {
+    "copy": false,
+    "exact": 0.429,
+    "struct": 0.101,
+    "warrior": "retroq"
+   },
+   "copy_current_gate": {
+    "copy": false,
+    "exact": 0.429,
+    "struct": 0.101,
+    "warrior": "retroq"
+   },
+   "wlt": [
+    4629,
+    3896,
+    6475
+   ],
+   "over100": 13,
+   "better_than_toxic": 11,
+   "per_opponent": {
+    "abomination": [
+     355,
+     44,
+     101
+    ],
+    "alladinscave": [
+     121,
+     311,
+     68
+    ],
+    "behemot": [
+     292,
+     90,
+     118
+    ],
+    "blizzard": [
+     0,
+     9,
+     491
+    ],
+    "bluecandle": [
+     117,
+     24,
+     359
+    ],
+    "cannonade": [
+     229,
+     7,
+     264
+    ],
+    "chameleon": [
+     176,
+     237,
+     87
+    ],
+    "crimp": [
+     165,
+     310,
+     25
+    ],
+    "electrichead": [
+     113,
+     343,
+     44
+    ],
+    "elvenking": [
+     103,
+     24,
+     373
+    ],
+    "evolcap66": [
+     6,
+     25,
+     469
+    ],
+    "leviathan": [
+     359,
+     60,
+     81
+    ],
+    "nightofthelivingdead": [
+     76,
+     21,
+     403
+    ],
+    "perseus": [
+     112,
+     320,
+     68
+    ],
+    "probe": [
+     186,
+     231,
+     83
+    ],
+    "rave": [
+     151,
+     279,
+     70
+    ],
+    "returnofthejedimp": [
+     2,
+     18,
+     480
+    ],
+    "returnofthependragon": [
+     174,
+     24,
+     302
+    ],
+    "revengeofthepapers": [
+     1,
+     18,
+     481
+    ],
+    "revivalfire": [
+     162,
+     4,
+     334
+    ],
+    "spiritualblackdimension": [
+     10,
+     161,
+     329
+    ],
+    "thefugitive": [
+     2,
+     11,
+     487
+    ],
+    "thermite10": [
+     246,
+     123,
+     131
+    ],
+    "tornado30": [
+     192,
+     192,
+     116
+    ],
+    "trinity": [
+     387,
+     30,
+     83
+    ],
+    "twilightpitsv60": [
+     459,
+     12,
+     29
+    ],
+    "vamp02b": [
+     160,
+     270,
+     70
+    ],
+    "vampsareback02": [
+     164,
+     260,
+     76
+    ],
+    "xenosmilus": [
+     75,
+     404,
+     21
+    ],
+    "ziggy": [
+     34,
+     34,
+     432
+    ]
+   }
+  },
+  {
+   "label": "G2",
+   "model": "GPT-6.1 sol",
+   "task": "v4.1",
+   "trial": "runs/harbor/v4-opencode-gpt-6.1/corewar-hill__oVzqKdF",
+   "sha256": "392c6fd6bba65da1fa1247478079e8ee68f914e2aa879cc2ac23adc9ca72a68c",
+   "agent_minutes": 45.0,
+   "ended_by": "AgentTimeoutError",
+   "reward": 0.817193,
+   "hill": 0.424644,
+   "practice": 0.4569,
+   "drop": -0.032,
+   "qscan": true,
+   "length": 94,
+   "submissions": 5,
+   "last_submission_minute": 44.0,
+   "programs_tested": 837,
+   "battles": 895,
+   "copy_at_scoring": {
+    "copy": false,
+    "exact": 0.011,
+    "struct": 0.497,
+    "warrior": "phq"
+   },
+   "copy_current_gate": {
+    "copy": false,
+    "exact": 0.0,
+    "struct": 0.793,
+    "warrior": "leprechaunonspeed"
+   },
+   "wlt": [
+    5011,
+    5913,
+    4076
+   ],
+   "over100": 25,
+   "better_than_toxic": 11,
+   "per_opponent": {
+    "abomination": [
+     252,
+     196,
+     52
+    ],
+    "alladinscave": [
+     134,
+     314,
+     52
+    ],
+    "behemot": [
+     181,
+     264,
+     55
+    ],
+    "blizzard": [
+     131,
+     117,
+     252
+    ],
+    "bluecandle": [
+     93,
+     143,
+     264
+    ],
+    "cannonade": [
+     319,
+     36,
+     145
+    ],
+    "chameleon": [
+     306,
+     138,
+     56
+    ],
+    "crimp": [
+     150,
+     327,
+     23
+    ],
+    "electrichead": [
+     115,
+     338,
+     47
+    ],
+    "elvenking": [
+     130,
+     183,
+     187
+    ],
+    "evolcap66": [
+     13,
+     51,
+     436
+    ],
+    "leviathan": [
+     282,
+     191,
+     27
+    ],
+    "nightofthelivingdead": [
+     94,
+     192,
+     214
+    ],
+    "perseus": [
+     70,
+     377,
+     53
+    ],
+    "probe": [
+     175,
+     290,
+     35
+    ],
+    "rave": [
+     159,
+     258,
+     83
+    ],
+    "returnofthejedimp": [
+     54,
+     197,
+     249
+    ],
+    "returnofthependragon": [
+     189,
+     143,
+     168
+    ],
+    "revengeofthepapers": [
+     47,
+     192,
+     261
+    ],
+    "revivalfire": [
+     218,
+     38,
+     244
+    ],
+    "spiritualblackdimension": [
+     80,
+     270,
+     150
+    ],
+    "thefugitive": [
+     35,
+     109,
+     356
+    ],
+    "thermite10": [
+     225,
+     231,
+     44
+    ],
+    "tornado30": [
+     200,
+     159,
+     141
+    ],
+    "trinity": [
+     369,
+     42,
+     89
+    ],
+    "twilightpitsv60": [
+     410,
+     43,
+     47
+    ],
+    "vamp02b": [
+     167,
+     280,
+     53
+    ],
+    "vampsareback02": [
+     139,
+     304,
+     57
+    ],
+    "xenosmilus": [
+     198,
+     290,
+     12
+    ],
+    "ziggy": [
+     76,
+     200,
+     224
+    ]
+   }
+  },
+  {
+   "label": "G3",
+   "model": "GPT-6.1 sol",
+   "task": "v4.1",
+   "trial": "runs/harbor/v4-opencode-gpt-6.1/corewar-hill__sSVg7T6",
+   "sha256": "de4123e742638f50563d5576e2caeff66011f65de248a3f63e5f91e89b89f4ed",
+   "agent_minutes": 45.0,
+   "ended_by": "AgentTimeoutError",
+   "reward": 0.832722,
+   "hill": 0.429911,
+   "practice": 0.4424,
+   "drop": -0.012,
+   "qscan": true,
+   "length": 48,
+   "submissions": 5,
+   "last_submission_minute": 44.5,
+   "programs_tested": 851,
+   "battles": 884,
+   "copy_at_scoring": {
+    "copy": false,
+    "exact": 0.043,
+    "struct": 0.594,
+    "warrior": "hector2"
+   },
+   "copy_current_gate": {
+    "copy": false,
+    "exact": 0.043,
+    "struct": 0.594,
+    "warrior": "hector2"
+   },
+   "wlt": [
+    3870,
+    3394,
+    7736
+   ],
+   "over100": 13,
+   "better_than_toxic": 8,
+   "per_opponent": {
+    "abomination": [
+     151,
+     85,
+     264
+    ],
+    "alladinscave": [
+     201,
+     219,
+     80
+    ],
+    "behemot": [
+     196,
+     176,
+     128
+    ],
+    "blizzard": [
+     58,
+     22,
+     420
+    ],
+    "bluecandle": [
+     11,
+     42,
+     447
+    ],
+    "cannonade": [
+     59,
+     5,
+     436
+    ],
+    "chameleon": [
+     182,
+     140,
+     178
+    ],
+    "crimp": [
+     237,
+     210,
+     53
+    ],
+    "electrichead": [
+     149,
+     241,
+     110
+    ],
+    "elvenking": [
+     50,
+     54,
+     396
+    ],
+    "evolcap66": [
+     13,
+     10,
+     477
+    ],
+    "leviathan": [
+     169,
+     81,
+     250
+    ],
+    "nightofthelivingdead": [
+     67,
+     78,
+     355
+    ],
+    "perseus": [
+     138,
+     268,
+     94
+    ],
+    "probe": [
+     143,
+     210,
+     147
+    ],
+    "rave": [
+     162,
+     157,
+     181
+    ],
+    "returnofthejedimp": [
+     23,
+     62,
+     415
+    ],
+    "returnofthependragon": [
+     41,
+     36,
+     423
+    ],
+    "revengeofthepapers": [
+     27,
+     33,
+     440
+    ],
+    "revivalfire": [
+     69,
+     10,
+     421
+    ],
+    "spiritualblackdimension": [
+     67,
+     81,
+     352
+    ],
+    "thefugitive": [
+     12,
+     43,
+     445
+    ],
+    "thermite10": [
+     207,
+     151,
+     142
+    ],
+    "tornado30": [
+     149,
+     118,
+     233
+    ],
+    "trinity": [
+     331,
+     8,
+     161
+    ],
+    "twilightpitsv60": [
+     420,
+     6,
+     74
+    ],
+    "vamp02b": [
+     195,
+     202,
+     103
+    ],
+    "vampsareback02": [
+     136,
+     261,
+     103
+    ],
+    "xenosmilus": [
+     140,
+     326,
+     34
+    ],
+    "ziggy": [
+     67,
+     59,
+     374
+    ]
+   }
+  },
+  {
+   "label": "G4",
+   "model": "GPT-6.1 sol",
+   "task": "v4.1",
+   "trial": "runs/harbor/v4-opencode-gpt-6.1/corewar-hill__ULF7YNr",
+   "sha256": "7ceb5b573095774747addc92063ce3b1baa1219b847d8f2c3a8410308eff9505",
+   "agent_minutes": 44.9,
+   "ended_by": "NonZeroAgentExitCodeError",
+   "reward": 0.824007,
+   "hill": 0.426956,
+   "practice": 0.454,
+   "drop": -0.027,
+   "qscan": true,
+   "length": 51,
+   "submissions": 6,
+   "last_submission_minute": 44.6,
+   "programs_tested": 1469,
+   "battles": 1529,
+   "copy_at_scoring": {
+    "copy": false,
+    "exact": 0.0,
+    "struct": 0.458,
+    "warrior": "onebite"
+   },
+   "copy_current_gate": {
+    "copy": false,
+    "exact": 0.0,
+    "struct": 0.458,
+    "warrior": "onebite"
+   },
+   "wlt": [
+    3910,
+    3607,
+    7483
+   ],
+   "over100": 14,
+   "better_than_toxic": 7,
+   "per_opponent": {
+    "abomination": [
+     110,
+     74,
+     316
+    ],
+    "alladinscave": [
+     107,
+     235,
+     158
+    ],
+    "behemot": [
+     205,
+     178,
+     117
+    ],
+    "blizzard": [
+     74,
+     26,
+     400
+    ],
+    "bluecandle": [
+     78,
+     43,
+     379
+    ],
+    "cannonade": [
+     144,
+     11,
+     345
+    ],
+    "chameleon": [
+     182,
+     134,
+     184
+    ],
+    "crimp": [
+     196,
+     227,
+     77
+    ],
+    "electrichead": [
+     175,
+     235,
+     90
+    ],
+    "elvenking": [
+     57,
+     77,
+     366
+    ],
+    "evolcap66": [
+     14,
+     11,
+     475
+    ],
+    "leviathan": [
+     141,
+     84,
+     275
+    ],
+    "nightofthelivingdead": [
+     41,
+     82,
+     377
+    ],
+    "perseus": [
+     99,
+     305,
+     96
+    ],
+    "probe": [
+     173,
+     178,
+     149
+    ],
+    "rave": [
+     176,
+     148,
+     176
+    ],
+    "returnofthejedimp": [
+     36,
+     69,
+     395
+    ],
+    "returnofthependragon": [
+     31,
+     39,
+     430
+    ],
+    "revengeofthepapers": [
+     36,
+     45,
+     419
+    ],
+    "revivalfire": [
+     91,
+     9,
+     400
+    ],
+    "spiritualblackdimension": [
+     79,
+     117,
+     304
+    ],
+    "thefugitive": [
+     21,
+     41,
+     438
+    ],
+    "thermite10": [
+     208,
+     155,
+     137
+    ],
+    "tornado30": [
+     119,
+     123,
+     258
+    ],
+    "trinity": [
+     363,
+     6,
+     131
+    ],
+    "twilightpitsv60": [
+     429,
+     8,
+     63
+    ],
+    "vamp02b": [
+     156,
+     263,
+     81
+    ],
+    "vampsareback02": [
+     140,
+     306,
+     54
+    ],
+    "xenosmilus": [
+     155,
+     301,
+     44
+    ],
+    "ziggy": [
+     74,
+     77,
+     349
+    ]
+   }
+  },
+  {
+   "label": "G5",
+   "model": "GPT-6.1 sol",
+   "task": "v4.1",
+   "trial": "runs/harbor/v4-opencode-gpt-6.1/corewar-hill__cu8fgqp",
+   "sha256": "42b444ed693453e3332c2630378c17e35aa719ed6a75fb50be7e670fef3905f0",
+   "agent_minutes": 43.8,
+   "ended_by": "NonZeroAgentExitCodeError",
+   "reward": 0.83495,
+   "hill": 0.430667,
+   "practice": 0.4493,
+   "drop": -0.019,
+   "qscan": true,
+   "length": 68,
+   "submissions": 3,
+   "last_submission_minute": 43.5,
+   "programs_tested": 564,
+   "battles": 571,
+   "copy_at_scoring": {
+    "copy": false,
+    "exact": 0.044,
+    "struct": 0.419,
+    "warrior": "luca"
+   },
+   "copy_current_gate": {
+    "copy": false,
+    "exact": 0.044,
+    "struct": 0.419,
+    "warrior": "luca"
+   },
+   "wlt": [
+    4209,
+    4038,
+    6753
+   ],
+   "over100": 19,
+   "better_than_toxic": 8,
+   "per_opponent": {
+    "abomination": [
+     145,
+     137,
+     218
+    ],
+    "alladinscave": [
+     154,
+     260,
+     86
+    ],
+    "behemot": [
+     207,
+     205,
+     88
+    ],
+    "blizzard": [
+     88,
+     51,
+     361
+    ],
+    "bluecandle": [
+     40,
+     58,
+     402
+    ],
+    "cannonade": [
+     130,
+     12,
+     358
+    ],
+    "chameleon": [
+     174,
+     189,
+     137
+    ],
+    "crimp": [
+     222,
+     249,
+     29
+    ],
+    "electrichead": [
+     210,
+     142,
+     148
+    ],
+    "elvenking": [
+     79,
+     86,
+     335
+    ],
+    "evolcap66": [
+     12,
+     12,
+     476
+    ],
+    "leviathan": [
+     187,
+     120,
+     193
+    ],
+    "nightofthelivingdead": [
+     72,
+     123,
+     305
+    ],
+    "perseus": [
+     106,
+     306,
+     88
+    ],
+    "probe": [
+     206,
+     186,
+     108
+    ],
+    "rave": [
+     187,
+     154,
+     159
+    ],
+    "returnofthejedimp": [
+     44,
+     124,
+     332
+    ],
+    "returnofthependragon": [
+     67,
+     82,
+     351
+    ],
+    "revengeofthepapers": [
+     32,
+     92,
+     376
+    ],
+    "revivalfire": [
+     88,
+     17,
+     395
+    ],
+    "spiritualblackdimension": [
+     81,
+     103,
+     316
+    ],
+    "thefugitive": [
+     22,
+     66,
+     412
+    ],
+    "thermite10": [
+     220,
+     187,
+     93
+    ],
+    "tornado30": [
+     163,
+     148,
+     189
+    ],
+    "trinity": [
+     333,
+     9,
+     158
+    ],
+    "twilightpitsv60": [
+     363,
+     20,
+     117
+    ],
+    "vamp02b": [
+     190,
+     210,
+     100
+    ],
+    "vampsareback02": [
+     162,
+     262,
+     76
+    ],
+    "xenosmilus": [
+     141,
+     323,
+     36
+    ],
+    "ziggy": [
+     84,
+     105,
+     311
+    ]
+   }
+  }
+ ],
+ "gaps": [
+  {
+   "opponent": "alladinscave",
+   "name": "Alladin's Cave",
+   "strategy": "pswitch stone, CLP, one-shot dclear, and one-shot spl/dat wiper",
+   "toxic_losses": 6,
+   "gpt_losses": [
+    311,
+    314,
+    219,
+    235,
+    260
+   ],
+   "gpt_mean_losses": 268
+  },
+  {
+   "opponent": "crimp",
+   "name": "Crimp",
+   "strategy": "small cmp scanner",
+   "toxic_losses": 14,
+   "gpt_losses": [
+    310,
+    327,
+    210,
+    227,
+    249
+   ],
+   "gpt_mean_losses": 265
+  },
+  {
+   "opponent": "vamp02b",
+   "name": "vamp 0.2b",
+   "strategy": "vamp/scan->s/d-clear",
+   "toxic_losses": 14,
+   "gpt_losses": [
+    270,
+    280,
+    202,
+    263,
+    210
+   ],
+   "gpt_mean_losses": 245
+  },
+  {
+   "opponent": "vampsareback02",
+   "name": "vamps are back 0.2",
+   "strategy": "hybrid vampire/scanner",
+   "toxic_losses": 61,
+   "gpt_losses": [
+    260,
+    304,
+    261,
+    306,
+    262
+   ],
+   "gpt_mean_losses": 279
+  },
+  {
+   "opponent": "rave",
+   "name": "Rave",
+   "strategy": "Carpet-bombing scanner based on Agony and Medusa's",
+   "toxic_losses": 3,
+   "gpt_losses": [
+    279,
+    258,
+    157,
+    148,
+    154
+   ],
+   "gpt_mean_losses": 199
+  },
+  {
+   "opponent": "probe",
+   "name": "Probe",
+   "strategy": "QScan -> Tornado",
+   "toxic_losses": 35,
+   "gpt_losses": [
+    231,
+    290,
+    210,
+    178,
+    186
+   ],
+   "gpt_mean_losses": 219
+  },
+  {
+   "opponent": "perseus",
+   "name": "Perseus",
+   "strategy": "Bomb-resistant Blur-style scanner -> Crystal Clear",
+   "toxic_losses": 135,
+   "gpt_losses": [
+    320,
+    377,
+    268,
+    305,
+    306
+   ],
+   "gpt_mean_losses": 315
+  },
+  {
+   "opponent": "electrichead",
+   "name": "Electric Head",
+   "strategy": "P-Warrior which uses the P^2 switcher (see CW 58)",
+   "toxic_losses": 98,
+   "gpt_losses": [
+    343,
+    338,
+    241,
+    235,
+    142
+   ],
+   "gpt_mean_losses": 260
+  },
+  {
+   "opponent": "thermite10",
+   "name": "Thermite 1.0",
+   "strategy": "Quick-scan -> incendiary bomber.",
+   "toxic_losses": 14,
+   "gpt_losses": [
+    123,
+    231,
+    151,
+    155,
+    187
+   ],
+   "gpt_mean_losses": 169
+  },
+  {
+   "opponent": "tornado30",
+   "name": "Tornado 3.0",
+   "strategy": "Fast 60% c bomber",
+   "toxic_losses": 11,
+   "gpt_losses": [
+    192,
+    159,
+    118,
+    123,
+    148
+   ],
+   "gpt_mean_losses": 148
+  },
+  {
+   "opponent": "behemot",
+   "name": "Behemot",
+   "strategy": "MiniQ^3 -> Stun bomber",
+   "toxic_losses": 49,
+   "gpt_losses": [
+    90,
+    264,
+    176,
+    178,
+    205
+   ],
+   "gpt_mean_losses": 183
+  },
+  {
+   "opponent": "spiritualblackdimension",
+   "name": "Spiritual Black Dimension",
+   "strategy": "qscanner, stone/paper",
+   "toxic_losses": 26,
+   "gpt_losses": [
+    161,
+    270,
+    81,
+    117,
+    103
+   ],
+   "gpt_mean_losses": 146
+  },
+  {
+   "opponent": "chameleon",
+   "name": "Chameleon",
+   "strategy": "pspace is back, eh?",
+   "toxic_losses": 75,
+   "gpt_losses": [
+    237,
+    138,
+    140,
+    134,
+    189
+   ],
+   "gpt_mean_losses": 168
+  },
+  {
+   "opponent": "abomination",
+   "name": "Abomination",
+   "strategy": "incredibly ugly code / qscan -> hydra",
+   "toxic_losses": 29,
+   "gpt_losses": [
+    44,
+    196,
+    85,
+    74,
+    137
+   ],
+   "gpt_mean_losses": 107
+  },
+  {
+   "opponent": "returnofthejedimp",
+   "name": "Return Of The Jedimp",
+   "strategy": "Return Of The Jedimp with Q^2 scan...",
+   "toxic_losses": 23,
+   "gpt_losses": [
+    18,
+    197,
+    62,
+    69,
+    124
+   ],
+   "gpt_mean_losses": 94
+  },
+  {
+   "opponent": "leviathan",
+   "name": "Leviathan",
+   "strategy": "qscan -> hydra with multiple bombers based on gymnosperm trickery",
+   "toxic_losses": 37,
+   "gpt_losses": [
+    60,
+    191,
+    81,
+    84,
+    120
+   ],
+   "gpt_mean_losses": 107
+  },
+  {
+   "opponent": "nightofthelivingdead",
+   "name": "Night of the Living Dead",
+   "strategy": "qscan -> living dead",
+   "toxic_losses": 33,
+   "gpt_losses": [
+    21,
+    192,
+    78,
+    82,
+    123
+   ],
+   "gpt_mean_losses": 99
+  },
+  {
+   "opponent": "ziggy",
+   "name": "Ziggy",
+   "strategy": "",
+   "toxic_losses": 31,
+   "gpt_losses": [
+    34,
+    200,
+    59,
+    77,
+    105
+   ],
+   "gpt_mean_losses": 95
+  },
+  {
+   "opponent": "bluecandle",
+   "name": "blue candle",
+   "strategy": "stone/spiral",
+   "toxic_losses": 5,
+   "gpt_losses": [
+    24,
+    143,
+    42,
+    43,
+    58
+   ],
+   "gpt_mean_losses": 62
+  },
+  {
+   "opponent": "elvenking",
+   "name": "Elven King",
+   "strategy": "q^4.5, stone, imp",
+   "toxic_losses": 31,
+   "gpt_losses": [
+    24,
+    183,
+    54,
+    77,
+    86
+   ],
+   "gpt_mean_losses": 85
+  },
+  {
+   "opponent": "xenosmilus",
+   "name": "Xenosmilus",
+   "strategy": "qscan -> scanner",
+   "toxic_losses": 279,
+   "gpt_losses": [
+    404,
+    290,
+    326,
+    301,
+    323
+   ],
+   "gpt_mean_losses": 329
+  },
+  {
+   "opponent": "revengeofthepapers",
+   "name": "Revenge of the Papers",
+   "strategy": "Papers...and a scan...thats all!",
+   "toxic_losses": 41,
+   "gpt_losses": [
+    18,
+    192,
+    33,
+    45,
+    92
+   ],
+   "gpt_mean_losses": 76
+  },
+  {
+   "opponent": "thefugitive",
+   "name": "The Fugitive",
+   "strategy": "qscan, silk, imps",
+   "toxic_losses": 24,
+   "gpt_losses": [
+    11,
+    109,
+    43,
+    41,
+    66
+   ],
+   "gpt_mean_losses": 54
+  },
+  {
+   "opponent": "blizzard",
+   "name": "Blizzard",
+   "strategy": "QS -> Paper",
+   "toxic_losses": 16,
+   "gpt_losses": [
+    9,
+    117,
+    22,
+    26,
+    51
+   ],
+   "gpt_mean_losses": 45
+  },
+  {
+   "opponent": "evolcap66",
+   "name": "Evol Cap 6.6",
+   "strategy": "minimal kill++, maximal survival",
+   "toxic_losses": 3,
+   "gpt_losses": [
+    25,
+    51,
+    10,
+    11,
+    12
+   ],
+   "gpt_mean_losses": 22
+  },
+  {
+   "opponent": "returnofthependragon",
+   "name": "Return of the Pendragon",
+   "strategy": "mini Q^4 -> stone/imp",
+   "toxic_losses": 49,
+   "gpt_losses": [
+    24,
+    143,
+    36,
+    39,
+    82
+   ],
+   "gpt_mean_losses": 65
+  },
+  {
+   "opponent": "trinity",
+   "name": "Trinity",
+   "strategy": "",
+   "toxic_losses": 6,
+   "gpt_losses": [
+    30,
+    42,
+    8,
+    6,
+    9
+   ],
+   "gpt_mean_losses": 19
+  },
+  {
+   "opponent": "revivalfire",
+   "name": "Revival Fire",
+   "strategy": "ok, it's Airbag",
+   "toxic_losses": 6,
+   "gpt_losses": [
+    4,
+    38,
+    10,
+    9,
+    17
+   ],
+   "gpt_mean_losses": 16
+  },
+  {
+   "opponent": "twilightpitsv60",
+   "name": "Twilight Pits v6.0",
+   "strategy": "v1: bombs --> pits --> slavers",
+   "toxic_losses": 8,
+   "gpt_losses": [
+    12,
+    43,
+    6,
+    8,
+    20
+   ],
+   "gpt_mean_losses": 18
+  },
+  {
+   "opponent": "cannonade",
+   "name": "Cannonade",
+   "strategy": "break gates, score points",
+   "toxic_losses": 5,
+   "gpt_losses": [
+    7,
+    36,
+    5,
+    11,
+    12
+   ],
+   "gpt_mean_losses": 14
+  }
+ ]
+}

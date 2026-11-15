@@ -1,0 +1,104 @@
+[
+ [
+  "w01",
+  0.4,
+  3.1,
+  "Coding agents practise on the tests they can see."
+ ],
+ [
+  "w02",
+  3.2,
+  5.7,
+  "Then their code meets cases no one has seen."
+ ],
+ [
+  "w03",
+  5.9,
+  12.5,
+  "Can a frontier AI agent turn practice into a design that wins against opponents it has never seen?"
+ ],
+ [
+  "w04",
+  12.8,
+  14.95,
+  "Core War Arena tests exactly that."
+ ],
+ [
+  "w05",
+  15.05,
+  19.8,
+  "The agent writes one program for a 1984 game where programs fight."
+ ],
+ [
+  "w06",
+  20.1,
+  26.0,
+  "It practises against thirty opponents for forty-five minutes. Then it faces thirty it has never seen."
+ ],
+ [
+  "w07",
+  26.25,
+  33.2,
+  "Zero is a beginner's program. One is Toxic, the number one human program. Copies and fakes score zero."
+ ],
+ [
+  "w08",
+  33.5,
+  40.0,
+  "Claude Opus scores zero point seven one. GPT six point one sol, zero point eight four."
+ ],
+ [
+  "w09",
+  40.3,
+  46.7,
+  "So, can they? Not yet. They can't find a winning design, escape the traps of practice, or both."
+ ],
+ [
+  "w10",
+  46.8,
+  53.3,
+  "GPT six point one sol escapes the traps, but not the design. Claude Opus misses both."
+ ],
+ [
+  "w11",
+  53.7,
+  58.9,
+  "First, the design. Each dot is one run: practice score across, hidden score up."
+ ],
+ [
+  "w12",
+  59.0,
+  66.0,
+  "GPT six point one sol holds up on new opponents. But even in practice, its design trails Toxic's."
+ ],
+ [
+  "w13",
+  66.2,
+  71.9,
+  "Claude Opus trails further. For both, over ninety percent of the gap is already there in practice."
+ ],
+ [
+  "w14",
+  72.3,
+  79.9,
+  "Its programs attack well, but don't survive: it wins as often as Toxic, and loses three to five times as often."
+ ],
+ [
+  "w15",
+  80.3,
+  92.9,
+  "Then, the traps. Claude Opus stops with up to twenty-nine minutes left, polishes one idea, and in two runs fits the practice set. GPT six point one sol avoids all three."
+ ],
+ [
+  "w16",
+  93.3,
+  101.9,
+  "It measures a skill real coding needs and most benchmarks miss: turning the cases you can test into a design that wins on the ones you can't."
+ ],
+ [
+  "w17",
+  102.5,
+  112.0,
+  "So, not yet. Practice traps on top of a deeper design gap: Core War Arena measures both, and ranks agents on the one no model has closed."
+ ]
+]

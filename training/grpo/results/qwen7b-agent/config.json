@@ -1,0 +1,31 @@
+{
+ "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+ "out": "/out/qwen7b-agent",
+ "max_steps": 80,
+ "prompts_per_step": 8,
+ "num_generations": 8,
+ "micro_batch": 4,
+ "lr": 1e-05,
+ "lora_r": 16,
+ "max_completion": 2560,
+ "max_tool_calls": 3,
+ "mode": "two_turn",
+ "turn_tokens": 768,
+ "debug": false,
+ "prompt_style": "mlx_dwarf",
+ "temperature": 0.8,
+ "top_p": 0.95,
+ "top_k": 512,
+ "save_steps": 20,
+ "vllm_memory": 0.35,
+ "workers": 16,
+ "seed": 0,
+ "samples_per_step": 64,
+ "spar_rounds": 20,
+ "agentic": true,
+ "versions": {
+  "trl": "1.17.1",
+  "transformers": "5.17.0",
+  "torch": "2.13.0+cu130"
+ }
+}

@@ -1,0 +1,74 @@
+;redcode-94nop
+;name Lattice Sweep
+;author Barthelemy Presutto
+;strategy decoy + boot away, 0.4c mod-20 seq scanner with spl carpet, then spl/dat clear
+;assert CORESIZE==8000
+step    equ     1060
+off     equ     11
+        org     boot
+gate    dat     0,      0
+ptr     dat     0,      1060
+cbomb   spl     #step,  >step
+top     mov.i   cbomb,  >ptr
+scan    seq.i   2*step, }2*step+off
+        mov.ab  scan,   ptr
+        add.f   inc,    scan
+        jmn.a   top,    scan
+inc     spl     #step,  #step
+clr     mov.i   dbomb,  >gate
+        djn.f   clr,    >gate
+dbomb   dat     <2667,  dbomb-gate+2
+        spl.ab   <2,   >3
+        spl.a   {7,   $2
+        spl.ab   >8,   }7
+        spl.ba   *6,   >6
+        spl.i   $9,   }7
+        spl.b   *4,   #4
+        spl.b   $4,   <5
+        spl.f   <3,   $1
+        spl.f   *4,   *1
+        spl.a   <5,   @6
+        jmp.b   }3,   <9
+        spl.i   @3,   {2
+        spl.ab   {6,   *2
+        jmp.b   #9,   *7
+        spl.ab   @2,   $5
+        spl.a   >7,   }9
+        spl.a   @2,   }9
+        spl.x   #2,   $2
+        spl.x   <2,   <1
+        spl.a   *4,   #3
+boot
+        mov.i   gate+0,  gate+7727+0
+        mov.i   gate+1,  gate+7727+1
+        mov.i   gate+2,  gate+7727+2
+        mov.i   gate+3,  gate+7727+3
+        mov.i   gate+4,  gate+7727+4
+        mov.i   gate+5,  gate+7727+5
+        mov.i   gate+6,  gate+7727+6
+        mov.i   gate+7,  gate+7727+7
+        mov.i   gate+8,  gate+7727+8
+        mov.i   gate+9,  gate+7727+9
+        mov.i   gate+10,  gate+7727+10
+        mov.i   gate+11,  gate+7727+11
+        jmp     top+7727
+        spl.a   @5,   @7
+        spl.f   $7,   $4
+        spl.ba   *4,   $5
+        spl.ab   {3,   $8
+        mov.i   #3,   *5
+        spl.i   $5,   *6
+        jmp.b   <3,   $1
+        spl.f   #7,   >5
+        spl.i   }2,   $8
+        spl.ba   #9,   $9
+        jmp.b   >1,   @5
+        spl.f   $1,   #4
+        spl.ba   {2,   >5
+        mov.i   #3,   {9
+        spl.i   {5,   #8
+        spl.b   }6,   *4
+        spl.f   }6,   {4
+        jmp.b   #6,   @2
+        spl.x   #2,   }4
+        dat.f   @5,   #3

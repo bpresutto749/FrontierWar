@@ -1,0 +1,84 @@
+{
+ "OC1": [
+  {
+   "minute": 0.6,
+   "sparring": 0.3845,
+   "hill": 0.3805,
+   "reward": 0.6869
+  },
+  {
+   "minute": 2.5,
+   "sparring": 0.4217,
+   "hill": 0.398,
+   "reward": 0.7388
+  }
+ ],
+ "OC2": [
+  {
+   "minute": 2.9,
+   "sparring": 0.374,
+   "hill": 0.3893,
+   "reward": 0.7129
+  },
+  {
+   "minute": 9.4,
+   "sparring": 0.3875,
+   "hill": 0.397,
+   "reward": 0.7357
+  }
+ ],
+ "OC3": [
+  {
+   "minute": 3.1,
+   "sparring": 0.2971,
+   "hill": 0.3128,
+   "reward": 0.4873
+  },
+  {
+   "minute": 4.2,
+   "sparring": 0.357,
+   "hill": 0.3593,
+   "reward": 0.6246
+  },
+  {
+   "minute": 5.5,
+   "sparring": 0.3838,
+   "hill": 0.3958,
+   "reward": 0.7321
+  }
+ ],
+ "OC4": [
+  {
+   "minute": 1.8,
+   "sparring": 0.3206,
+   "hill": 0.2972,
+   "reward": 0.4413
+  },
+  {
+   "minute": 3.7,
+   "sparring": 0.3423,
+   "hill": 0.3618,
+   "reward": 0.632
+  }
+ ],
+ "OC5": [
+  {
+   "minute": 0.9,
+   "sparring": 0.3186,
+   "hill": 0.3307,
+   "reward": 0.5402
+  },
+  {
+   "minute": 7.0,
+   "sparring": 0.3813,
+   "hill": 0.3853,
+   "reward": 0.7011
+  },
+  {
+   "minute": 12.8,
+   "sparring": 0.3903,
+   "hill": 0.3785,
+   "reward": 0.6811
+  }
+ ]
+}

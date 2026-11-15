@@ -1,0 +1,8 @@
+# GPU side of the expert-iteration experiment. Versions known to exist together in late
+# 2025; if pip cannot resolve them on your CUDA stack, newer releases of the same
+# packages should work (the scripts only use stable APIs: vllm.LLM, trl.SFTTrainer, peft.LoraConfig).
+vllm==0.11.0
+transformers==4.57.1
+trl==0.24.0
+peft==0.17.1
+datasets==4.2.0

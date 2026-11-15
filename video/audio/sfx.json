@@ -1,0 +1,42 @@
+{
+ "about": "light sound effects, in seconds of the video: whoosh on cuts, soft hits on the big numbers and the answer, ticks on the lists, a riser before the close",
+ "whoosh": [
+  12.6,
+  19.9,
+  26.1,
+  33.3,
+  40.1,
+  53.4,
+  72.0,
+  80.0,
+  93.0,
+  102.0
+ ],
+ "hit": [
+  34.6,
+  36.7,
+  37.9,
+  41.5,
+  68.4,
+  102.7
+ ],
+ "tick": [
+  30.3,
+  30.8,
+  47.3,
+  48.7,
+  50.7,
+  81.4,
+  84.1,
+  85.4,
+  88.2,
+  88.5,
+  88.8
+ ],
+ "riser": [
+  [
+   100.0,
+   102.0
+  ]
+ ]
+}

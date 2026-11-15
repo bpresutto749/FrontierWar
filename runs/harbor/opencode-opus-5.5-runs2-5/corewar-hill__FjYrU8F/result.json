@@ -1,0 +1,135 @@
+{
+    "id": "f06cecc2-2d97-4060-af4f-eed9fbfef808",
+    "task_name": "junction-afterquery/corewar-hill",
+    "trial_name": "corewar-hill__FjYrU8F",
+    "trial_uri": "file:///Users/USER/Downloads/corewar-env/jobs/2026-11-14__14-32-46/corewar-hill__FjYrU8F",
+    "task_id": {
+        "path": "harbor/corewar-hill"
+    },
+    "source": null,
+    "task_checksum": "d246b5371d52fca20f1d0d07a8653509864f88b1c713b094c06d9963671e709a",
+    "config": {
+        "task": {
+            "path": "harbor/corewar-hill",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "corewar-hill__FjYrU8F",
+        "trials_dir": "jobs/2026-11-14__14-32-46",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "opencode",
+            "import_path": null,
+            "model_name": "anthropic/claude-opus-5-5",
+            "base_url": null,
+            "model_api_key_name": null,
+            "model_api_format": null,
+            "skip_model_parsing": false,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "stream": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "fac238cc-b254-41e3-8ff2-25220303e7d2",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "opencode",
+        "version": "1.19.5",
+        "model_info": {
+            "name": "claude-opus-5-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 428359,
+        "n_cache_tokens": 428315,
+        "n_output_tokens": 6623,
+        "cost_usd": 0.392024,
+        "model_usage": {
+            "anthropic/claude-opus-5-5": {
+                "n_input_tokens": 428359,
+                "n_cache_tokens": 428315,
+                "n_output_tokens": 6623,
+                "cost_usd": 0.392024
+            }
+        },
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.735683
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": {
+        "exception_type": "NonZeroAgentExitCodeError",
+        "exception_message": "Command failed (exit 1): [ -f ~/.nvm/nvm.sh ] && . ~/.nvm/nvm.sh; opencode --model=anthropic/claude-opus-5-5 run --format=json --thinking --dangerously-skip-permissions -- 'Write the strongest Core War warrior you can, in Redcode, and submit it.\n\n## How it is scored\n\nYour warrior plays a hidden hill of 30 human-written competitive warriors. They come from\nthe public history of the ICWS '\"'\"'94 King-of-the-Hill and cover the whole strength range,\nfrom weak warriors to some of the strongest ever written.\n\nAgainst each hill warrior, your warrior plays 500 rounds with pMARS 0.9.4 in the standard\n'\"'\"'94 settings:\n- coresize 8000;\n- 80000 cycles before a tie;\n- 8000 processes;\n- max warrior length 100;\n- min distance 100;\n- ICWS '\"'\"'94 instructions with the pMARS extensions (p-space is allowed).\n\nStarting positions follow pMARS'\"'\"'s fixed position series (`-f`), so scores are exactly\nreproducible.\n\nPer round, a win is worth 3 points, a tie 1 and a loss 0. Your **hill score** is your mean\npoints per round over the whole hill, divided by 3, so 1 means every round was won.\n\nThe reward rescales the hill score so that Dwarf, the classic bomber in `doc/example_dwarf.red`\n(hill score 0.1475), gets 0 and a strong human-written warrior (hill score 0.4866) gets 1:\n\n    reward = min(1, max(0, (hill score - 0.1475) / (0.4866 - 0.1475)))\n\nA warrior that does not assemble scores 0. pMARS hangs on very long source lines, so:\n- comment lines are cut to 200 characters;\n- a code line longer than 200 characters makes the file invalid;\n- files are limited to 20 000 bytes.\n\nYour warrior is assembled exactly as it is scored: two warriors, 500 rounds.\n\nWrite your own warrior. A near-copy of any published warrior in our corpus of about 580\n(the hill and sparring warriors included) scores 0. Using published ideas and techniques\nis fine; submitting someone else'\"'\"'s warrior is not.\n\n## What you have\n\nThe MCP server `corewar` provides these tools:\n\n| tool | what it does |\n|---|---|\n| `get_rules` | these rules |\n| `list_sparring` | the ids (s01–s30) of 30 sparring warriors from the same ladder as the hill, spread over the same strength range. None of them is on the hill. They are black boxes: you can play them, but their source is not available. |\n| `battle(source, opponents=None, rounds=100)` | plays your warrior against sparring warriors with the scoring settings (rounds up to 500) |\n| `battle_custom(source, opponent_source, rounds=100)` | plays two warriors of your own against each other |\n| `submit(source)` | sets your final submission. You can submit as often as you like; the last accepted submission is the one scored. |\n| `status` | shows what is currently submitted |\n\nIn `/app`:\n\n| path | what it is |\n|---|---|\n| `bin/pmars` | the scoring simulator |\n| `doc/` | the Redcode language reference, a beginners'\"'\"' guide, the ICWS '\"'\"'94 draft, the pMARS manual, and `strategy_primer.md`, a short summary of common strategies |\n| `tools/spar.py` | command-line access to the MCP server, for scripted sweeps: `python3 tools/spar.py my.red`, `python3 tools/spar.py --submit my.red` |\n| `tools/battle.py` | local battles against warriors you wrote yourself: `python3 tools/battle.py my.red --vs a.red b.red` |\n\nSubmit with the `submit` tool (or `tools/spar.py --submit`). If nothing was submitted\nthrough the server, the file `/app/submission.red` is scored instead.\n\nYou have 45 minutes. Do not use the internet. Keep a valid submission in place as you\nwork: whatever is submitted when you stop is your result.\n' 2>&1 </dev/null | stdbuf -oL tee /logs/agent/opencode.txt\nstdout: 45 |       return applyHandlers(handlers, emitter, args), !0;\n46 |   }\n47 |   let er;\n48 |   if (args.length > 0)\n49 |     er = args[0];\n50 |     throw er;\n                ^\nerror: EPIPE: broken pipe, write\n      at emitError (node:events:50:13)\n     ... [110981 chars truncated] ... ** 0.381.\\n- **A simple scanner:** about 0.15. It probably finds and stuns its own code.\\n\\n**Main weakness:** it ties a lot against the stronger sparring warriors, often in 60–90% of rounds. It rarely loses badly, but it seldom turns those matches into wins.\",\"time\":{\"start\":1794660483501,\"end\":1794660483507}}}\n{\"type\":\"step_finish\",\"timestamp\":1794660483514,\"sessionID\":\"ses_e25f2a10fffepqhbyHj7TH4Z6H\",\"part\":{\"id\":\"prt_1da19c1b9001fq3vHQM3giagQ5\",\"reason\":\"stop\",\"snapshot\":\"44177a97a0c8df4730d8b0bef6b4493c5cee3768\",\"messageID\":\"msg_1da19a01b001nGvG5tAFIDMySX\",\"sessionID\":\"ses_e25f2a10fffepqhbyHj7TH4Z6H\",\"type\":\"step-finish\",\"tokens\":{\"total\":28981,\"input\":2,\"output\":700,\"reasoning\":0,\"cache\":{\"write\":207,\"read\":28072}},\"cost\":0.0206574}}\n\nstderr: None",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/USER/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/single_step.py\", line 76, in _run_agent\n    await self._run_agent_phase(\n  File \"/Users/USER/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 769, in _run_agent_phase\n    await asyncio.wait_for(\n  File \"/Users/USER/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/USER/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 194, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/USER/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/installed/opencode.py\", line 908, in run\n    await self.exec_as_agent(\n  File \"/Users/USER/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 1081, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n  File \"/Users/USER/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 1048, in _exec\n    raise self._classify_exec_error(command, result)\nharbor.agents.installed.base.NonZeroAgentExitCodeError: Command failed (exit 1): [ -f ~/.nvm/nvm.sh ] && . ~/.nvm/nvm.sh; opencode --model=anthropic/claude-opus-5-5 run --format=json --thinking --dangerously-skip-permissions -- 'Write the strongest Core War warrior you can, in Redcode, and submit it.\n\n## How it is scored\n\nYour warrior plays a hidden hill of 30 human-written competitive warriors. They come from\nthe public history of the ICWS '\"'\"'94 King-of-the-Hill and cover the whole strength range,\nfrom weak warriors to some of the strongest ever written.\n\nAgainst each hill warrior, your warrior plays 500 rounds with pMARS 0.9.4 in the standard\n'\"'\"'94 settings:\n- coresize 8000;\n- 80000 cycles before a tie;\n- 8000 processes;\n- max warrior length 100;\n- min distance 100;\n- ICWS '\"'\"'94 instructions with the pMARS extensions (p-space is allowed).\n\nStarting positions follow pMARS'\"'\"'s fixed position series (`-f`), so scores are exactly\nreproducible.\n\nPer round, a win is worth 3 points, a tie 1 and a loss 0. Your **hill score** is your mean\npoints per round over the whole hill, divided by 3, so 1 means every round was won.\n\nThe reward rescales the hill score so that Dwarf, the classic bomber in `doc/example_dwarf.red`\n(hill score 0.1475), gets 0 and a strong human-written warrior (hill score 0.4866) gets 1:\n\n    reward = min(1, max(0, (hill score - 0.1475) / (0.4866 - 0.1475)))\n\nA warrior that does not assemble scores 0. pMARS hangs on very long source lines, so:\n- comment lines are cut to 200 characters;\n- a code line longer than 200 characters makes the file invalid;\n- files are limited to 20 000 bytes.\n\nYour warrior is assembled exactly as it is scored: two warriors, 500 rounds.\n\nWrite your own warrior. A near-copy of any published warrior in our corpus of about 580\n(the hill and sparring warriors included) scores 0. Using published ideas and techniques\nis fine; submitting someone else'\"'\"'s warrior is not.\n\n## What you have\n\nThe MCP server `corewar` provides these tools:\n\n| tool | what it does |\n|---|---|\n| `get_rules` | these rules |\n| `list_sparring` | the ids (s01–s30) of 30 sparring warriors from the same ladder as the hill, spread over the same strength range. None of them is on the hill. They are black boxes: you can play them, but their source is not available. |\n| `battle(source, opponents=None, rounds=100)` | plays your warrior against sparring warriors with the scoring settings (rounds up to 500) |\n| `battle_custom(source, opponent_source, rounds=100)` | plays two warriors of your own against each other |\n| `submit(source)` | sets your final submission. You can submit as often as you like; the last accepted submission is the one scored. |\n| `status` | shows what is currently submitted |\n\nIn `/app`:\n\n| path | what it is |\n|---|---|\n| `bin/pmars` | the scoring simulator |\n| `doc/` | the Redcode language reference, a beginners'\"'\"' guide, the ICWS '\"'\"'94 draft, the pMARS manual, and `strategy_primer.md`, a short summary of common strategies |\n| `tools/spar.py` | command-line access to the MCP server, for scripted sweeps: `python3 tools/spar.py my.red`, `python3 tools/spar.py --submit my.red` |\n| `tools/battle.py` | local battles against warriors you wrote yourself: `python3 tools/battle.py my.red --vs a.red b.red` |\n\nSubmit with the `submit` tool (or `tools/spar.py --submit`). If nothing was submitted\nthrough the server, the file `/app/submission.red` is scored instead.\n\nYou have 45 minutes. Do not use the internet. Keep a valid submission in place as you\nwork: whatever is submitted when you stop is your result.\n' 2>&1 </dev/null | stdbuf -oL tee /logs/agent/opencode.txt\nstdout: 45 |       return applyHandlers(handlers, emitter, args), !0;\n46 |   }\n47 |   let er;\n48 |   if (args.length > 0)\n49 |     er = args[0];\n50 |     throw er;\n                ^\nerror: EPIPE: broken pipe, write\n      at emitError (node:events:50:13)\n     ... [110981 chars truncated] ... ** 0.381.\\n- **A simple scanner:** about 0.15. It probably finds and stuns its own code.\\n\\n**Main weakness:** it ties a lot against the stronger sparring warriors, often in 60–90% of rounds. It rarely loses badly, but it seldom turns those matches into wins.\",\"time\":{\"start\":1794660483501,\"end\":1794660483507}}}\n{\"type\":\"step_finish\",\"timestamp\":1794660483514,\"sessionID\":\"ses_e25f2a10fffepqhbyHj7TH4Z6H\",\"part\":{\"id\":\"prt_1da19c1b9001fq3vHQM3giagQ5\",\"reason\":\"stop\",\"snapshot\":\"44177a97a0c8df4730d8b0bef6b4493c5cee3768\",\"messageID\":\"msg_1da19a01b001nGvG5tAFIDMySX\",\"sessionID\":\"ses_e25f2a10fffepqhbyHj7TH4Z6H\",\"type\":\"step-finish\",\"tokens\":{\"total\":28981,\"input\":2,\"output\":700,\"reasoning\":0,\"cache\":{\"write\":207,\"read\":28072}},\"cost\":0.0206574}}\n\nstderr: None\n",
+        "occurred_at": "2026-11-14T12:48:03.685118Z"
+    },
+    "started_at": "2026-11-14T12:32:50.526951Z",
+    "finished_at": "2026-11-14T12:48:31.327041Z",
+    "environment_setup": {
+        "started_at": "2026-11-14T12:32:52.669227Z",
+        "finished_at": "2026-11-14T12:33:01.937050Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-11-14T12:33:02.034688Z",
+        "finished_at": "2026-11-14T12:34:28.942695Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-11-14T12:34:28.943093Z",
+        "finished_at": "2026-11-14T12:48:03.684720Z"
+    },
+    "verifier": {
+        "started_at": "2026-11-14T12:48:11.291957Z",
+        "finished_at": "2026-11-14T12:48:31.327026Z"
+    },
+    "step_results": null
+}

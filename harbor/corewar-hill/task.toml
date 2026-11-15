@@ -1,0 +1,60 @@
+schema_version = "1.4"
+# variant: corewar-hill
+artifacts = [
+  { source = "/results/submission.red", service = "arena", destination = "submission.red" },
+  { source = "/results/events.jsonl", service = "arena", destination = "events.jsonl" },
+  { source = "/results/history", service = "arena", destination = "history" },
+  { source = "/app/submission.red", destination = "app_submission.red" },
+]
+
+[task]
+name = "junction-afterquery/corewar-hill"
+version = "1.0.0"
+description = "Write an original Redcode warrior that holds its own against a hidden hill of 30 human-written King-of-the-Hill warriors."
+keywords = ["core-war", "redcode", "adversarial-program-synthesis", "generalization", "open-ended-search"]
+
+[metadata]
+category = "adversarial program synthesis"
+difficulty_explanation = "With an exact simulator, a strategy primer and 30 black-box sparring warriors drawn from the same ladder as the hidden hill, frontier agents converge on one tuned archetype (a lone paper, stone or scanner), abandon composites, stop with budget left, and stay below a human expert warrior even on the opponents they can see. Scores are deterministic (pMARS fixed position series)."
+reference = "Toxic by John Metcalf, #1 of 264 human warriors on the CodeClash CC:Ladder Elo ranking (chosen before any agent run)"
+reference_hill_score = 0.486
+
+[verifier]
+timeout_sec = 900.0
+environment_mode = "separate"
+network_mode = "no-network"
+
+[agent]
+timeout_sec = 2700.0
+# Agent phase: only common model APIs are reachable (the MCP sidecar shares the
+# agent's network namespace under Harbor's egress control and is reached on
+# localhost), so an agent cannot download published warriors. If your model
+# endpoint is not listed, add it at run time: harbor run ... --allow-agent-host <host>
+network_mode = "allowlist"
+# Exact inference hosts only: no general-purpose file hosting (no *.googleapis.com,
+# no *.amazonaws.com). Vertex AI or Bedrock users add their regional host.
+allowed_hosts = [
+  "api.anthropic.com", "api.openai.com", "*.openai.azure.com", "openrouter.ai",
+  "generativelanguage.googleapis.com", "api.mistral.ai", "api.deepseek.com",
+  "api.x.ai", "api.together.xyz", "api.fireworks.ai", "api.groq.com",
+  "api.moonshot.ai", "api.z.ai",
+]
+
+[environment]
+cpus = 2
+memory_mb = 4096
+network_mode = "public"
+build_timeout_sec = 900.0
+os = "linux"
+
+[[environment.mcp_servers]]
+name = "corewar"
+transport = "streamable-http"
+url = "http://localhost:8000/mcp"
+
+[environment.healthcheck]
+command = "python3 -c \"import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=3)\""
+interval_sec = 2.0
+start_period_sec = 60.0
+start_interval_sec = 2.0
+retries = 3

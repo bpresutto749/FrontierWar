@@ -1,0 +1,55 @@
+{
+    "id": "fac238cc-b254-41e3-8ff2-25220303e7d2",
+    "started_at": "2026-11-14T14:32:47.664100",
+    "updated_at": "2026-11-14T14:48:31.328831",
+    "finished_at": "2026-11-14T14:48:31.328831",
+    "n_total_trials": 4,
+    "stats": {
+        "n_completed_trials": 4,
+        "n_errored_trials": 4,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "opencode__claude-opus-5-5__adhoc": {
+                "n_trials": 4,
+                "n_errors": 4,
+                "metrics": [
+                    {
+                        "mean": 0.69522325
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.681103": [
+                            "corewar-hill__bJ7ph5p"
+                        ],
+                        "0.735683": [
+                            "corewar-hill__FjYrU8F"
+                        ],
+                        "0.73208": [
+                            "corewar-hill__yztouhA"
+                        ],
+                        "0.632027": [
+                            "corewar-hill__63vBycW"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "NonZeroAgentExitCodeError": [
+                        "corewar-hill__bJ7ph5p",
+                        "corewar-hill__FjYrU8F",
+                        "corewar-hill__yztouhA",
+                        "corewar-hill__63vBycW"
+                    ]
+                }
+            }
+        },
+        "n_input_tokens": 2092144,
+        "n_cache_tokens": 2091954,
+        "n_output_tokens": 27058,
+        "cost_usd": 2.0379207999999998
+    }
+}

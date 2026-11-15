@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "harbor/corewar-hill"
+    },
+    "trial_name": "corewar-hill__BHKbaro",
+    "trials_dir": "jobs/2026-11-14__14-05-39",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "4c4d832b-955c-48e5-a83e-5502a4fe6f74"
+}

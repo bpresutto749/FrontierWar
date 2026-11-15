@@ -1,0 +1,61 @@
+{
+    "id": "c611e448-4a1a-48fb-882b-a9245681a8ef",
+    "started_at": "2026-11-15T02:52:21.484760",
+    "updated_at": "2026-11-15T04:25:15.831349",
+    "finished_at": "2026-11-15T04:25:15.831349",
+    "n_total_trials": 5,
+    "stats": {
+        "n_completed_trials": 5,
+        "n_errored_trials": 5,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "opencode__gpt-6.1-sol__adhoc": {
+                "n_trials": 5,
+                "n_errors": 5,
+                "metrics": [
+                    {
+                        "mean": 0.8416328
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.817193": [
+                            "corewar-hill__oVzqKdF"
+                        ],
+                        "0.899292": [
+                            "corewar-hill__kGJPs6d"
+                        ],
+                        "0.824007": [
+                            "corewar-hill__ULF7YNr"
+                        ],
+                        "0.832722": [
+                            "corewar-hill__sSVg7T6"
+                        ],
+                        "0.83495": [
+                            "corewar-hill__cu8fgqp"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "AgentTimeoutError": [
+                        "corewar-hill__oVzqKdF",
+                        "corewar-hill__kGJPs6d",
+                        "corewar-hill__sSVg7T6"
+                    ],
+                    "NonZeroAgentExitCodeError": [
+                        "corewar-hill__ULF7YNr",
+                        "corewar-hill__cu8fgqp"
+                    ]
+                }
+            }
+        },
+        "n_input_tokens": 20128635,
+        "n_cache_tokens": 20127612,
+        "n_output_tokens": 81533,
+        "cost_usd": 5.7247471999999995
+    }
+}

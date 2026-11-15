@@ -1,0 +1,11 @@
+*.o
+pmars/pmars
+harbor/corewar-hill/tests/pmars/pmars
+__pycache__/
+.pytest_cache/
+video/build/
+.venv-mlx/
+training/mlx/runs/*/adapter_*/
+training/mlx/runs/*/smoke/
+jobs/
+training/grpo/runs/

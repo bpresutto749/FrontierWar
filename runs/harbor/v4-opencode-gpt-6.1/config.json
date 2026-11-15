@@ -1,0 +1,15 @@
+{
+    "job_name": "2026-11-15__02-52-18",
+    "n_attempts": 5,
+    "agents": [
+        {
+            "name": "opencode",
+            "model_name": "openai/gpt-6.1-sol"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "harbor/corewar-hill"
+        }
+    ]
+}

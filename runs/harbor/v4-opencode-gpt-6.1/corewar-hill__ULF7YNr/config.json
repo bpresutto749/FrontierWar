@@ -1,0 +1,12 @@
+{
+    "task": {
+        "path": "harbor/corewar-hill"
+    },
+    "trial_name": "corewar-hill__ULF7YNr",
+    "trials_dir": "jobs/2026-11-15__02-52-18",
+    "agent": {
+        "name": "opencode",
+        "model_name": "openai/gpt-6.1-sol"
+    },
+    "job_id": "c611e448-4a1a-48fb-882b-a9245681a8ef"
+}

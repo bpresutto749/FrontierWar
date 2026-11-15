@@ -1,0 +1,30 @@
+{
+ "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+ "out": "/out/qwen7b-grpo-nodwarfgate",
+ "max_steps": 150,
+ "prompts_per_step": 8,
+ "num_generations": 8,
+ "micro_batch": 8,
+ "lr": 1e-05,
+ "lora_r": 16,
+ "max_completion": 768,
+ "prompt_style": "mlx_dwarf",
+ "temperature": 0.8,
+ "top_p": 0.95,
+ "top_k": 512,
+ "save_steps": 25,
+ "vllm_memory": 0.3,
+ "workers": 16,
+ "seed": 0,
+ "gate_example": true,
+ "samples_per_step": 64,
+ "reward": {
+  "rounds": 50,
+  "tie_weight": 0.0
+ },
+ "versions": {
+  "trl": "1.17.1",
+  "transformers": "5.17.0",
+  "torch": "2.13.0+cu130"
+ }
+}

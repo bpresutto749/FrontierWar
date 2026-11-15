@@ -1,0 +1,27 @@
+timestamp=2026-11-14T12:19:15.667Z level=INFO run=fac1db72 message="creating instance" directory=/app
+timestamp=2026-11-14T12:19:15.668Z level=INFO run=fac1db72 message=fromDirectory directory=/app
+timestamp=2026-11-14T12:19:15.672Z level=INFO run=fac1db72 message=bootstrapping directory=/app
+timestamp=2026-11-14T12:19:15.675Z level=INFO run=fac1db72 message=loading path=/root/.config/opencode/config.json
+timestamp=2026-11-14T12:19:15.675Z level=INFO run=fac1db72 message=loading path=/root/.config/opencode/opencode.json
+timestamp=2026-11-14T12:19:15.677Z level=INFO run=fac1db72 message=loading path=/root/.config/opencode/opencode.jsonc
+timestamp=2026-11-14T12:19:15.748Z level=INFO run=fac1db72 message="all LSPs are disabled"
+timestamp=2026-11-14T12:19:15.748Z level=INFO run=fac1db72 message="all formatters are disabled"
+timestamp=2026-11-14T12:19:15.748Z level=INFO run=fac1db72 message=init
+timestamp=2026-11-14T12:19:15.810Z level=INFO run=fac1db72 message=created id=ses_e26009b1dffeltaDy907NnoA2L slug=clever-comet version=1.19.5 projectID=global directory=/app path=app workspaceID=undefined parentID=undefined title="New session - 2026-11-14T12:19:15.810Z" agent=undefined model=undefined metadata=undefined permission="[{\"permission\":\"question\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_enter\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_exit\",\"pattern\":\"*\",\"action\":\"deny\"}]" cost=0 tokens.input=0 tokens.output=0 tokens.reasoning=0 tokens.cache.read=0 tokens.cache.write=0 time.created=1794658755810 time.updated=1794658755810
+timestamp=2026-11-14T12:19:15.814Z level=INFO run=fac1db72 message="event connected"
+timestamp=2026-11-14T12:19:15.827Z level=INFO run=fac1db72 message=loop session.id=ses_e26009b1dffeltaDy907NnoA2L step=0
+timestamp=2026-11-14T12:19:16.090Z level=INFO run=fac1db72 message=stream providerID=anthropic modelID=claude-haiku-5-5 session.id=ses_e26009b1dffeltaDy907NnoA2L small=true agent=title mode=primary
+timestamp=2026-11-14T12:19:16.094Z level=INFO run=fac1db72 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=anthropic llm.model=claude-haiku-5-5
+timestamp=2026-11-14T12:19:16.112Z level=INFO run=fac1db72 message=initialized
+timestamp=2026-11-14T12:19:16.128Z level=INFO run=fac1db72 message=tracking hash=44177a97a0c8df4730d8b0bef6b4493c5cee3768 cwd=/app git=/logs/agent/opencode/xdg-data/opencode/snapshot/global/42099b4af021e53fd8fd4e056c2568d7c2e3ffa8
+timestamp=2026-11-14T12:19:16.130Z level=INFO run=fac1db72 message="shell tool using shell" shell=/usr/bin/bash
+timestamp=2026-11-14T12:19:16.145Z level=INFO run=fac1db72 message=init count=1
+timestamp=2026-11-14T12:19:16.160Z level=INFO run=fac1db72 message="watcher backend" directory=/app platform=linux backend=inotify
+timestamp=2026-11-14T12:19:16.162Z level=INFO run=fac1db72 message="project copy refresh started" projectID=global
+timestamp=2026-11-14T12:19:16.163Z level=INFO run=fac1db72 message="project copy refresh done" projectID=global updated=[] removed=[]
+timestamp=2026-11-14T12:19:16.168Z level=INFO run=fac1db72 message="booting location services" directory=/app workspaceID=undefined
+timestamp=2026-11-14T12:19:16.270Z level=INFO run=fac1db72 message=process session.id=ses_e26009b1dffeltaDy907NnoA2L messageID=msg_1d9ff65f70015GlVwm0mrssmy5
+timestamp=2026-11-14T12:19:16.271Z level=INFO run=fac1db72 message=stream providerID=anthropic modelID=claude-opus-5-5 session.id=ses_e26009b1dffeltaDy907NnoA2L small=false agent=build mode=primary
+timestamp=2026-11-14T12:19:16.272Z level=INFO run=fac1db72 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=anthropic llm.model=claude-opus-5-5
+timestamp=2026-11-14T12:19:16.476Z level=ERROR run=fac1db72 message="Failed to fetch models.dev" cause="Cause([Fail(HttpClientError: Transport error (GET https://models.opencode.ai/api.json) (cause: TypeError: ECONNRESET: The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()))])"
+timestamp=2026-11-14T12:19:16.579Z level=ERROR run=fac1db72 message="stream error" providerID=anthropic modelID=claude-haiku-5-5 session.id=ses_e26009b1dffeltaDy907NnoA2L small=true agent=title mode=primary error.error="AI_APICallError: Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."

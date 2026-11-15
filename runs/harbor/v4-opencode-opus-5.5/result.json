@@ -1,0 +1,59 @@
+{
+    "id": "44a9ae6f-c2a8-4cde-9aea-838ff1afcf87",
+    "started_at": "2026-11-14T15:24:31.392198",
+    "updated_at": "2026-11-14T16:07:19.368722",
+    "finished_at": "2026-11-14T16:07:19.368722",
+    "n_total_trials": 5,
+    "stats": {
+        "n_completed_trials": 5,
+        "n_errored_trials": 5,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "opencode__claude-opus-5-5__adhoc": {
+                "n_trials": 5,
+                "n_errors": 5,
+                "metrics": [
+                    {
+                        "mean": 0.7130916
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.727166": [
+                            "corewar-hill__RNStjor"
+                        ],
+                        "0.691915": [
+                            "corewar-hill__47Js9Lc"
+                        ],
+                        "0.665968": [
+                            "corewar-hill__vYa5MUj"
+                        ],
+                        "0.740794": [
+                            "corewar-hill__xtDXjV4"
+                        ],
+                        "0.739615": [
+                            "corewar-hill__X7kqQnj"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "NonZeroAgentExitCodeError": [
+                        "corewar-hill__RNStjor",
+                        "corewar-hill__47Js9Lc",
+                        "corewar-hill__vYa5MUj",
+                        "corewar-hill__xtDXjV4",
+                        "corewar-hill__X7kqQnj"
+                    ]
+                }
+            }
+        },
+        "n_input_tokens": 18257837,
+        "n_cache_tokens": 18257117,
+        "n_output_tokens": 95942,
+        "cost_usd": 11.7577334
+    }
+}

@@ -1,0 +1,10 @@
+Agent 'nop' does not declare an options_model; leftover kwargs are ignored
+Skipping image OS validation for hb__d8c3462dc4f74f0406d65af5b73bb5a3: docker inspect returned 1
+Running healthcheck: python3 -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=3)"
+Healthcheck passed
+Agent 'nop' exposes no native web search or fetch tools for Harbor to disable; continuing. Sandbox network policy still applies.
+Collecting main service artifacts
+Stopping main service before sidecar evidence collection
+Main service stopped
+Collecting sidecar artifacts from services: ['arena']
+Skipping image OS validation for hb__7b730ee25787b837da0461f037a9d449: docker inspect returned 1

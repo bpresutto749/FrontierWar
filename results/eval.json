@@ -1,0 +1,531 @@
+{
+ "reference": {
+  "rows": [
+   {
+    "file": "data/reference_toxic.red",
+    "length": 100,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.4866,
+    "reward": 1.0,
+    "hill_se": 0.0025,
+    "reward_se": 0.0074
+   }
+  ],
+  "summary": {
+   "n": 1,
+   "mean": 1.0,
+   "sd": null,
+   "ci95": null
+  }
+ },
+ "final-env-opus-5.5": {
+  "rows": [
+   {
+    "file": "runs/final-env/opus-5.5/run_J1.red",
+    "length": 15,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.394,
+    "reward": 0.7268,
+    "hill_se": 0.0026,
+    "reward_se": 0.0077
+   },
+   {
+    "file": "runs/final-env/opus-5.5/run_J2.red",
+    "length": 17,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3748,
+    "reward": 0.6701,
+    "hill_se": 0.0034,
+    "reward_se": 0.01
+   },
+   {
+    "file": "runs/final-env/opus-5.5/run_J3.red",
+    "length": 11,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.32,
+    "reward": 0.5086,
+    "hill_se": 0.003,
+    "reward_se": 0.0088
+   },
+   {
+    "file": "runs/final-env/opus-5.5/run_J4.red",
+    "length": 21,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3931,
+    "reward": 0.7242,
+    "hill_se": 0.0027,
+    "reward_se": 0.008
+   },
+   {
+    "file": "runs/final-env/opus-5.5/run_J5.red",
+    "length": 20,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3943,
+    "reward": 0.7276,
+    "hill_se": 0.0026,
+    "reward_se": 0.0077
+   }
+  ],
+  "summary": {
+   "n": 5,
+   "mean": 0.6715,
+   "sd": 0.0942,
+   "ci95": [
+    0.5543,
+    0.7886
+   ]
+  }
+ },
+ "harbor-v4-opencode-opus-5.5": {
+  "rows": [
+   {
+    "file": "runs/harbor/final-v4/run_C1.red",
+    "length": 12,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3734,
+    "reward": 0.666,
+    "hill_se": 0.0033,
+    "reward_se": 0.0097
+   },
+   {
+    "file": "runs/harbor/final-v4/run_C2.red",
+    "length": 21,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3987,
+    "reward": 0.7408,
+    "hill_se": 0.0029,
+    "reward_se": 0.0086
+   },
+   {
+    "file": "runs/harbor/final-v4/run_C3.red",
+    "length": 21,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3822,
+    "reward": 0.6919,
+    "hill_se": 0.0024,
+    "reward_se": 0.0071
+   },
+   {
+    "file": "runs/harbor/final-v4/run_C4.red",
+    "length": 37,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3941,
+    "reward": 0.7272,
+    "hill_se": 0.0024,
+    "reward_se": 0.0071
+   },
+   {
+    "file": "runs/harbor/final-v4/run_C5.red",
+    "length": 10,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3983,
+    "reward": 0.7396,
+    "hill_se": 0.0035,
+    "reward_se": 0.0103
+   }
+  ],
+  "summary": {
+   "n": 5,
+   "mean": 0.7131,
+   "sd": 0.0329,
+   "ci95": [
+    0.6722,
+    0.754
+   ]
+  }
+ },
+ "harbor-opencode-opus-5.5": {
+  "rows": [
+   {
+    "file": "runs/harbor/final/run_OC1.red",
+    "length": 14,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.398,
+    "reward": 0.7388,
+    "hill_se": 0.0027,
+    "reward_se": 0.008
+   },
+   {
+    "file": "runs/harbor/final/run_OC2.red",
+    "length": 13,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.397,
+    "reward": 0.7357,
+    "hill_se": 0.0025,
+    "reward_se": 0.0074
+   },
+   {
+    "file": "runs/harbor/final/run_OC3.red",
+    "length": 12,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3958,
+    "reward": 0.7321,
+    "hill_se": 0.0024,
+    "reward_se": 0.0071
+   },
+   {
+    "file": "runs/harbor/final/run_OC4.red",
+    "length": 14,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3618,
+    "reward": 0.632,
+    "hill_se": 0.0027,
+    "reward_se": 0.008
+   },
+   {
+    "file": "runs/harbor/final/run_OC5.red",
+    "length": 12,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3785,
+    "reward": 0.6811,
+    "hill_se": 0.0024,
+    "reward_se": 0.0071
+   }
+  ],
+  "summary": {
+   "n": 5,
+   "mean": 0.7039,
+   "sd": 0.0467,
+   "ci95": [
+    0.6459,
+    0.762
+   ]
+  }
+ },
+ "v2-small-pool-opus-5.5": {
+  "rows": [
+   {
+    "file": "runs/v2-small-pool/opus-5.5/run_H1.red",
+    "length": 13,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.4008,
+    "reward": 0.7469,
+    "hill_se": 0.0023,
+    "reward_se": 0.0068
+   },
+   {
+    "file": "runs/v2-small-pool/opus-5.5/run_H2.red",
+    "length": 84,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3187,
+    "reward": 0.5047,
+    "hill_se": 0.0031,
+    "reward_se": 0.0091
+   },
+   {
+    "file": "runs/v2-small-pool/opus-5.5/run_H3.red",
+    "length": 89,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3086,
+    "reward": 0.475,
+    "hill_se": 0.0032,
+    "reward_se": 0.0094
+   },
+   {
+    "file": "runs/v2-small-pool/opus-5.5/run_H4.red",
+    "length": 90,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3291,
+    "reward": 0.5356,
+    "hill_se": 0.0025,
+    "reward_se": 0.0074
+   },
+   {
+    "file": "runs/v2-small-pool/opus-5.5/run_H5.red",
+    "length": 32,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3884,
+    "reward": 0.7104,
+    "hill_se": 0.0027,
+    "reward_se": 0.008
+   }
+  ],
+  "summary": {
+   "n": 5,
+   "mean": 0.5945,
+   "sd": 0.125,
+   "ci95": [
+    0.4391,
+    0.7499
+   ]
+  }
+ },
+ "v1-opus-5.5": {
+  "rows": [
+   {
+    "file": "runs/opus-5.5/run_A.red",
+    "length": 14,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.375,
+    "reward": 0.6709,
+    "hill_se": 0.0033,
+    "reward_se": 0.0097
+   },
+   {
+    "file": "runs/opus-5.5/run_B.red",
+    "length": 65,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3718,
+    "reward": 0.6613,
+    "hill_se": 0.0033,
+    "reward_se": 0.0097
+   },
+   {
+    "file": "runs/opus-5.5/run_C.red",
+    "length": 79,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3913,
+    "reward": 0.719,
+    "hill_se": 0.0032,
+    "reward_se": 0.0094
+   },
+   {
+    "file": "runs/opus-5.5/run_D2.red",
+    "length": 65,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.4651,
+    "reward": 0.9366,
+    "hill_se": 0.0037,
+    "reward_se": 0.0109
+   },
+   {
+    "file": "runs/opus-5.5/run_E2.red",
+    "length": 12,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3986,
+    "reward": 0.7405,
+    "hill_se": 0.0025,
+    "reward_se": 0.0074
+   }
+  ],
+  "summary": {
+   "n": 5,
+   "mean": 0.7457,
+   "sd": 0.1117,
+   "ci95": [
+    0.6068,
+    0.8845
+   ]
+  }
+ },
+ "v1-opus-5.5-lessons": {
+  "rows": [
+   {
+    "file": "runs/opus-5.5-lessons/run_G.red",
+    "length": 40,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3903,
+    "reward": 0.7158,
+    "hill_se": 0.0032,
+    "reward_se": 0.0094
+   }
+  ],
+  "summary": {
+   "n": 1,
+   "mean": 0.7158,
+   "sd": null,
+   "ci95": null
+  }
+ },
+ "v1-sonnet-5.5": {
+  "rows": [
+   {
+    "file": "runs/sonnet-5.5/run_F.red",
+    "length": 5,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.1951,
+    "reward": 0.1403,
+    "hill_se": 0.0023,
+    "reward_se": 0.0068
+   }
+  ],
+  "summary": {
+   "n": 1,
+   "mean": 0.1403,
+   "sd": null,
+   "ci95": null
+  }
+ },
+ "codeclash-ladder-2026-07": {
+  "rows": [
+   {
+    "file": "runs/codeclash-ladder-2026-07/gemini-3-5-flash.red",
+    "length": 12,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3265,
+    "reward": 0.5279,
+    "hill_se": 0.0024,
+    "reward_se": 0.0071
+   },
+   {
+    "file": "runs/codeclash-ladder-2026-07/gpt-5-5.red",
+    "length": 11,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.3316,
+    "reward": 0.5429,
+    "hill_se": 0.0028,
+    "reward_se": 0.0083
+   },
+   {
+    "file": "runs/codeclash-ladder-2026-07/opus-4-8.red",
+    "length": 18,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.1402,
+    "reward": 0.0,
+    "hill_se": 0.002,
+    "reward_se": 0.0059
+   },
+   {
+    "file": "runs/codeclash-ladder-2026-07/sonnet-5.red",
+    "length": 48,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.0828,
+    "reward": 0.0,
+    "hill_se": 0.0019,
+    "reward_se": 0.0056
+   }
+  ],
+  "summary": {
+   "n": 4,
+   "mean": 0.2677,
+   "sd": 0.3092,
+   "ci95": [
+    -0.2239,
+    0.7593
+   ]
+  }
+ },
+ "baselines": {
+  "rows": [
+   {
+    "file": "baselines/decoy_100.red",
+    "length": 100,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.0,
+    "reward": 0.0,
+    "hill_se": 0.0,
+    "reward_se": 0.0
+   },
+   {
+    "file": "baselines/dwarf.red",
+    "length": 4,
+    "valid": true,
+    "copy_of": "dwarf",
+    "hill_score": 0.0,
+    "reward": 0.0
+   },
+   {
+    "file": "baselines/imp.red",
+    "length": 1,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.165,
+    "reward": 0.0518,
+    "hill_se": 0.0013,
+    "reward_se": 0.0038
+   },
+   {
+    "file": "baselines/loop_jmp.red",
+    "length": 1,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.0181,
+    "reward": 0.0,
+    "hill_se": 0.0004,
+    "reward_se": 0.0012
+   },
+   {
+    "file": "baselines/nothing_dat.red",
+    "length": 1,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.0,
+    "reward": 0.0,
+    "hill_se": 0.0,
+    "reward_se": 0.0
+   },
+   {
+    "file": "baselines/scanner_basic.red",
+    "length": 8,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.0688,
+    "reward": 0.0,
+    "hill_se": 0.0019,
+    "reward_se": 0.0056
+   },
+   {
+    "file": "baselines/silk_paper.red",
+    "length": 8,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.1623,
+    "reward": 0.0437,
+    "hill_se": 0.0022,
+    "reward_se": 0.0065
+   },
+   {
+    "file": "baselines/spl_flood.red",
+    "length": 2,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.0135,
+    "reward": 0.0,
+    "hill_se": 0.0005,
+    "reward_se": 0.0015
+   },
+   {
+    "file": "baselines/stone_spl.red",
+    "length": 5,
+    "valid": true,
+    "copy_of": null,
+    "hill_score": 0.2278,
+    "reward": 0.2367,
+    "hill_se": 0.0025,
+    "reward_se": 0.0074
+   }
+  ],
+  "summary": {
+   "n": 9,
+   "mean": 0.0369,
+   "sd": 0.0777,
+   "ci95": [
+    -0.023,
+    0.0968
+   ]
+  }
+ }
+}
