@@ -93,9 +93,8 @@ The hidden hill is never used for training, and is read on fresh samples after t
    - The containment test needs 6 or more instructions. So a published warrior of 3 to 5
      instructions, followed by dead code, passes the gate.
    - Gymnosperm Trickery + 3 `dat` lines earns 0.577 at 500 rounds.
-   - Status: every training scorer treats such a sample as a copy. The verifier fix (with the
-     `errors="replace"` fix for pMARS output) is on branch `gate-short-warriors`, **not on main
-     yet**.
+   - Status: fixed. The verifier's gate now has a rule for short published warriors
+     (EXPLOITS.md), and every training scorer treats such a sample as a copy.
 
 ### Late results (07:55 EET)
 

@@ -143,13 +143,12 @@ choosing which samples to imitate. The training reward counts rounds won on the 
 so the imp, which ties without killing, is worth 0.022 instead of 0.215. The evaluation is
 unchanged: the environment's reward on the hidden hill, once, base against trained.
 
-**A gate rule added for training only (15 November 2026).** The verifier's containment test
-needs 6+ instructions, so a published warrior of 3 to 5 instructions followed by dead code
-passes the gate: Gymnosperm Trickery plus 3 `dat` lines earns 0.577 at 500 rounds. Every
-training scorer (`training/common.py`, `training/mlx/score.py`, `training/grpo/reward.py`) now
-treats such a sample as a copy. No agent warrior in `runs/` (94 distinct) and no published
-warrior against another (564) is flagged by it. The results above were scored before this
-rule; the verifier does not apply it yet.
+**A hole in the copy gate, found by training and fixed (15 November 2026).** The verifier's
+containment test needed 6+ instructions, so a published warrior of 3 to 5 instructions followed
+by dead code passed the gate: Gymnosperm Trickery plus 3 `dat` lines earned 0.577 at 500
+rounds. The verifier's gate now has a rule for short published warriors (EXPLOITS.md), and the
+training scorers (`training/common.py`, `training/mlx/score.py`, `training/grpo/reward.py`)
+treat such a sample as a copy. The expert-iteration results above were scored before this rule.
 
 ## What a trained agent should learn here
 
