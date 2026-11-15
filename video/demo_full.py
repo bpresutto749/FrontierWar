@@ -232,7 +232,7 @@ def s_trust(t, dur):
     return img
 
 s_clock = partial(ex.s_clock, top="An earlier version had no clock. Minutes used, out of 45:", title="More time alone changed nothing",
-                  kicker="3 · THE TRAPS  ·  CLAUDE OPUS")
+                  kicker="3 · WHAT GOES WRONG  ·  CLAUDE OPUS")
 
 WANT = [("Opponents it has never seen", {"diff"}), ("Good ideas win, not brute force", {"diff"}),
         ("An exact score, against the #1 human program", {"gap", "integ"})]
@@ -435,7 +435,8 @@ def s_real(t, dur):
         panel(d, (1000, y, 1800, y + 112), a2, r=16)
         text(d, (1030, y + 56), work, F("Inter-SemiBold.otf", 32), FG, a2, "lm")
     a3 = ramp(t, 10.0, 0.7) * k
-    text(d, (W / 2, 850), "Each one looks like progress, and ships code that fails later.", F("InterDisplay-Bold.otf", 44), ACC, a3, "mm")
+    text(d, (W / 2, 830), "Each one looks like progress, and ships code that fails later.", F("InterDisplay-Bold.otf", 44), ACC, a3, "mm")
+    text(d, (W / 2, 900), "So: avoid the three traps, and you win?", F("InterDisplay-Bold.otf", 44), FG, ramp(t, 12.4, 0.6) * k, "mm")
     return img
 
 def s_close(t, dur):
@@ -467,7 +468,7 @@ C1_REAL = [0.391, 0.387, 0.367, 0.365, 0.373]               # real test (hidden 
 def s_seen(t, dur):
     """Run C1 raises its practice score and lowers its real one, and says why in its report."""
     img, d, k = base(t, dur, {"diff", "gap"})
-    head(d, t, "3 · THE TRAPS  ·  CLAUDE OPUS, RUN C1", "Not just C5: practice up, hidden down", k)
+    head(d, t, "3 · WHAT GOES WRONG  ·  CLAUDE OPUS, RUN C1", "Not just C5: practice up, hidden down", k)
     a = ramp(t, 0.8, 0.6) * k
     text(d, (120, 280), "Claude Opus, run C1", F("Inter-Bold.otf", 38), RED, a, "lm")
     panel(d, (120, 320, 980, 520), a, r=16)
@@ -498,7 +499,7 @@ C_USED = [("C1", 32.7), ("C2", 22.9), ("C3", 29.8), ("C4", 24.1), ("C5", 16.5)] 
 def s_stop(t, dur):
     """Every run stops with minutes left; run C2 names its next idea, then stops."""
     img, d, k = base(t, dur, {"diff"})
-    head(d, t, "3 · THE TRAPS  ·  CLAUDE OPUS", "It names its next idea, then stops", k)
+    head(d, t, "3 · WHAT GOES WRONG  ·  CLAUDE OPUS", "It names its next idea, then stops", k)
     a = ramp(t, 0.8, 0.6) * k
     text(d, (120, 280), "Claude Opus, 5 runs", F("Inter-Bold.otf", 38), RED, a, "lm")
     x0, x1, y = 120, 960, 400
@@ -526,7 +527,7 @@ def s_stop(t, dur):
 def s_polish(t, dur):
     """The AI tunes one scanner; the expert program opens with a quick scan, then attacks."""
     img, d, k = base(t, dur, {"diff"})
-    head(d, t, "3 · THE TRAPS  ·  CLAUDE OPUS, RUN C5", "It polishes one idea", k)
+    head(d, t, "3 · WHAT GOES WRONG  ·  CLAUDE OPUS, RUN C5", "It polishes one idea", k)
     a = ramp(t, 0.8, 0.6) * k
     text(d, (120, 280), "Claude Opus (run C5)", F("Inter-Bold.otf", 38), RED, a, "lm")
     for i in range(18):
@@ -570,8 +571,8 @@ FIGHT = dict(dm.FIGHT_TXT, title="One hidden opponent: Blizzard", box=(250, 1670
 Q1 = ("Can a frontier AI agent turn ", "practice", "")
 Q2 = ("into a ", "design", " that wins against opponents")
 Q3 = ("it has ", "never seen", "?")
-STOPS = ["The test", "The answer", "The traps of practice", "The design", "Conclusion"]
-K1, K2, K3, K4, K5 = ("1 · THE TEST", "2 · THE ANSWER", "3 · THE TRAPS OF PRACTICE", "4 · THE DESIGN", "5 · CONCLUSION")
+STOPS = ["The test", "The results", "What goes wrong", "Is that all?", "The answer"]
+K1, K2, K3, K4, K5 = ("1 · THE TEST", "2 · THE RESULTS", "3 · WHAT GOES WRONG", "4 · IS THAT ALL?", "5 · THE ANSWER")
 ANSWER = "They can't escape the traps of practice, find a winning design, or both."
 GPT_NAME = "GPT-6.1 sol"
 
@@ -628,7 +629,7 @@ def v_question(t, dur):
 
 def v_game(t, dur):
     img, d, k = base(t, dur, set())
-    head(d, t, K1, "A 1984 game: programs fight", k)
+    head(d, t, K1, "First, the game: programs fight", k)
     for s_, y, t0 in (("Two programs,", 340, 0.8), ("one shared memory.", 402, 0.8), ("Each tries to crash", 512, 2.4), ("the other.", 574, 2.4)):
         text(d, (120, y), s_, F("Inter-SemiBold.otf", 50), FG, ramp(t, t0, 0.6) * k)
     text(d, (120, 704), "The last one running wins.", F("InterDisplay-Black.otf", 54), ACC, ramp(t, 3.8, 0.6) * k)
@@ -662,7 +663,7 @@ def v_lang(t, dur):
 
 def v_rps(t, dur):
     img, d, k = base(t, dur, {"diff"})
-    head(d, t, K1, "No perfect program", k)
+    head(d, t, K1, "And no program beats them all", k)
     cx, cy, R = 560, 630, 230
     pts = {"SCANNER": (cx, cy - R), "PAPER": (cx + R * 0.95, cy + R * 0.55), "STONE": (cx - R * 0.95, cy + R * 0.55)}
     for i, (name, p) in enumerate(pts.items()):
@@ -697,7 +698,7 @@ def grid30(d, x0, y0, cols, cw, ch, a, mark, fill, line, txtcol, t=None, t0=0.0)
 def v_split(t, dur):
     """The one picture of the test: practice opponents it can play, hidden opponents it never sees."""
     img, d, k = base(t, dur, {"diff"})
-    head(d, t, K1, "Practice opponents, then hidden ones", k)
+    head(d, t, K1, "So the test has two halves", k)
     a1 = ramp(t, 0.8, 0.6) * k
     panel(d, (120, 280, 940, 720), a1, r=20)
     text(d, (160, 330), "30 practice opponents", F("Inter-Bold.otf", 40), FG, a1, "lm")
@@ -756,7 +757,7 @@ def v_scale(t, dur):
 
 def v_nobrute(t, dur):
     img, d, k = base(t, dur, {"diff"})
-    head(d, t, K1, "No brute force", k)
+    head(d, t, K1, "No shortcut by brute force", k)
     a = ramp(t, 0.6, 0.7) * k
     f1, f2 = F("InterDisplay-Black.otf", 190), F("InterDisplay-Black.otf", 92)
     w = d.textlength("10", font=f1) + 8 + d.textlength("140", font=f2)
@@ -765,13 +766,13 @@ def v_nobrute(t, dur):
     text(d, (x0 + d.textlength("10", font=f1) + 8, 290), "140", f2, FG, a)
     text(d, (W / 2, 570), "possible 12-line programs.", F("Inter-SemiBold.otf", 44), FG, a, "mm")
     text(d, (W / 2, 660), f"A run tests at most about {N.about(N.GPT_TESTED[1])}.", F("Inter-Medium.otf", 40), MUTED, ramp(t, 2.0, 0.6) * k, "mm")
-    text(d, (W / 2, 830), "What wins is design, not compute.", F("InterDisplay-Black.otf", 60), ACC, ramp(t, 4.4, 0.6) * k, "mm")
+    text(d, (W / 2, 830), "What wins is ideas, not compute.", F("InterDisplay-Black.otf", 60), ACC, ramp(t, 4.4, 0.6) * k, "mm")
     return img
 
 
 def v_trust(t, dur):
     img, d, k = base(t, dur, {"integ", "craft"})
-    head(d, t, K1, "Cheats don't pay", k)
+    head(d, t, K1, "And no shortcut by cheating", k)
     for i, s_ in enumerate(["Copy a published program", "Fake the score file"]):
         x = 120 + i * 855
         a = ramp(t, 0.7 + i * 0.8, 0.5) * k
@@ -867,10 +868,35 @@ def question_small(d, y, a, size=46):
 
 def v_answer(t, dur):
     img, d, k = base(t, dur, {"gap", "diff"})
-    question_small(d, 130, ramp(t, 0.1, 0.4) * k * 0.9)
-    text(d, (W / 2, 330), "Not yet.", F("InterDisplay-Black.otf", 140), FG, ramp(t, 1.0, 0.6) * k, "mm")
-    text(d, (W / 2, 470), ANSWER, F("InterDisplay-Bold.otf", 40), MUTED, ramp(t, 2.2, 0.6) * k, "mm")
-    chart.answer_table(d, t, k, (200, 560, 1720, 920), dict(head=4.0, gpt_traps=5.6, gpt_design=6.4, opus=7.4), size=40, hsize=34, traps_first=True)
+    question_small(d, 200, ramp(t, 0.1, 0.4) * k * 0.9, 52)
+    text(d, (W / 2, 450), "Not yet.", F("InterDisplay-Black.otf", 160), FG, ramp(t, 1.0, 0.6) * k, "mm")
+    text(d, (W / 2, 640), "So what goes wrong?", F("InterDisplay-Bold.otf", 60), ACC, ramp(t, 2.4, 0.6) * k, "mm")
+    text(d, (W / 2, 730), "Let's watch one run, from its logs.", F("Inter-SemiBold.otf", 40), MUTED, ramp(t, 3.4, 0.6) * k, "mm")
+    return img
+
+
+def v_bridge(kicker, big, lines, t_lines=1.4):
+    """A connector slide: one big line, then one or two short ones."""
+    def scene(t, dur):
+        img, d, k = base(t, dur, set())
+        a = ramp(t, 0.2, 0.6) * k
+        text(d, (W / 2, 300), kicker, F("Inter-Bold.otf", 30), ACC, a, "mm")
+        text(d, (W / 2, 450), big, F("InterDisplay-Black.otf", 96), FG, a, "mm")
+        for i, (s_, col) in enumerate(lines):
+            text(d, (W / 2, 610 + i * 80), s_, F("InterDisplay-Bold.otf", 48), col, ramp(t, t_lines + i * 1.4, 0.6) * k, "mm")
+        return img
+    return scene
+
+
+def v_reveal(t, dur):
+    """Is that all? No: the second column of the answer appears."""
+    img, d, k = base(t, dur, {"gap"})
+    text(d, (W / 2, 140), K4, F("Inter-Bold.otf", 30), ACC, ramp(t, 0.2, 0.6) * k, "mm")
+    text(d, (W / 2, 260), "Is that all?", F("InterDisplay-Black.otf", 110), FG, ramp(t, 0.2, 0.6) * k, "mm")
+    text(d, (W / 2, 400), f"No. {GPT_NAME} avoids every trap, and still scores {r2(N.GPT_MEAN)}.", F("InterDisplay-Bold.otf", 50), MUTED,
+         ramp(t, 1.4, 0.6) * k, "mm")
+    chart.answer_table(d, t, k, (200, 500, 1720, 860), dict(head=3.0, gpt_traps=3.4, opus=3.8, gpt_design=6.0), size=40, hsize=34, traps_first=True)
+    text(d, (W / 2, 940), "Something deeper: the design.", F("InterDisplay-Black.otf", 54), ACC, ramp(t, 6.6, 0.6) * k, "mm")
     return img
 
 
@@ -889,7 +915,7 @@ def v_opener(kicker, lit, line1, line2):
 def v_chart(t, dur):
     """Every run's final program: practice score across, hidden-test score up."""
     img, d, k = base(t, dur, {"gap", "diff"})
-    head(d, t, K4, "Both behind Toxic, even in practice", k)
+    head(d, t, K4, "The gap is already there in practice", k)
     chart.scatter(d, t, k, (300, 290, 900, 890), dict(axes=0.6, toxic=1.4, gpt=4.0, gap=7.4, opus=10.4, drops=13.4))
     fb, fs = F("Inter-Bold.otf", 32), F("Inter-SemiBold.otf", 30)
     lines = [(0.8, "Practice: the 30 opponents it could see.", fs, MUTED, 370), (1.0, "Hidden test: 30 it never saw.", fs, MUTED, 414),
@@ -929,7 +955,7 @@ def v_table(t, dur):
         a2 = ramp(t, t0 + 1.8, 0.6) * k
         tick_mark(d, 1330, y + 70, a2, AMBER)
         text(d, (1362, y + 70), gp, F("Inter-SemiBold.otf", 26), FG, a2, "lm")
-    text(d, (W / 2, 900), f"{GPT_NAME} avoids all three, and still trails Toxic: the design gap.", F("InterDisplay-Bold.otf", 44), FG, ramp(t, 11.4, 0.6) * k, "mm")
+    text(d, (W / 2, 900), f"{GPT_NAME} avoids all three. So it should match Toxic?", F("InterDisplay-Bold.otf", 48), FG, ramp(t, 11.4, 0.6) * k, "mm")
     return img
 
 
@@ -987,7 +1013,7 @@ def v_survive(t, dur):
     text(d, (W / 2, 490), "but don't survive.", F("InterDisplay-Black.otf", 90), AMBER, ramp(t, 0.9, 0.6) * k, "mm")
     text(d, (W / 2, 660), f"Claude Opus too: {min(r['wlt'][1] for r in N.OPUS):,} to {max(r['wlt'][1] for r in N.OPUS):,} losses, against Toxic's {N.TOX_L:,}.",
          F("Inter-SemiBold.otf", 38), RED, ramp(t, 2.6, 0.6) * k, "mm")
-    text(d, (W / 2, 760), "No model has closed this gap yet.", F("InterDisplay-Bold.otf", 50), FG, ramp(t, 5.2, 0.6) * k, "mm")
+    text(d, (W / 2, 760), "That is not a trap. That is the design.", F("InterDisplay-Bold.otf", 50), FG, ramp(t, 5.2, 0.6) * k, "mm")
     return img
 
 
@@ -1102,7 +1128,7 @@ def v_close(t, dur):
 
 
 dm.LABELS["reveal_title"] = "Then the hidden test"
-R4 = "3 · THE TRAPS  ·  CLAUDE OPUS, RUN C5"
+R4 = "3 · WHAT GOES WRONG  ·  CLAUDE OPUS, RUN C5"
 
 # Each slide lasts as long as a reader at 4 words per second needs, plus 0.6 s (python video/audit.py at 4,
 # every line read in order of appearance; at least 3 s for a bridge). The replay and the game keep their timing.
@@ -1112,10 +1138,10 @@ SCENES = [("e01_title", v_title, 7.9), ("e02_question", v_question, 11.8),
           ("e06_split", v_split, 13.0), ("e07_rules", v_rules, 14.8), ("e08_scale", v_scale, 11.0),
           ("e09_nobrute", v_nobrute, 7.1), ("e10_trust", v_trust, 8.3), ("e11_calib", t_calib, 7.1),
           # 2 the answer, under the question
-          ("e12_agents", t_agents, 8.2), ("e13_result", v_result, 12.9), ("e14_answer", v_answer, 14.0),
+          ("e12_agents", t_agents, 8.2), ("e13_result", v_result, 12.9), ("e14_answer", v_answer, 9.8),
           # 3 the traps of practice (Claude Opus): one run, then each trap up close, then why it matters
-          ("e15_open", v_opener(K3, "traps", "Claude Opus 5.5 falls into all three traps of practice.",
-                                "One of its runs, C5, replayed from its logs."), 10.0),
+          ("e15_open", v_bridge(K3, "Claude Opus, run C5", [("45 minutes of practice, replayed from its logs.", MUTED),
+                                                            ("Watch for three traps.", ACC)]), 7.0),
           ("e16_rep1", dm.replay(R4 + ", MINUTES 0 TO 3", "Minutes 0–3: two quick tries", 0.0, 3.2), 18.0),
           ("e17_rep2", dm.replay(R4 + ", MINUTES 3 TO 12", "Minutes 3–12: tuning one scanner", 3.2, 12.5), 16.0),
           ("e18_rep3", dm.replay_end(R4 + ", MINUTES 12 TO 16", ("It stops at minute 16.5, with 28.5 minutes left.",
@@ -1124,12 +1150,11 @@ SCENES = [("e01_title", v_title, 7.9), ("e02_question", v_question, 11.8),
                                         "Practice: 0.018 behind Toxic. Hidden test: 0.089 behind.", "It trusted the score it could see.")), 15.1),
           ("e20_seen", s_seen, 20.0), ("e21_polish", s_polish, 19.1),
           ("e22_fight", dm.fight(R4, FIGHT), dm.INTRO + dm.SLOW + dm.FAST + dm.OUT),
-          ("e23_stop", s_stop, 18.9), ("e24_table", v_table, 17.2), ("e25_real", s_real, 19.0),
+          ("e23_stop", s_stop, 18.9), ("e24_table", v_table, 17.2), ("e25_real", s_real, 20.4),
           # 4 the design: is that all? no. Both trail Toxic even in practice; why; why it matters
-          ("e26_open", v_opener(K4, "design", "Is that all? No: both agents miss a winning design.",
-                                "Even against opponents they can see, their programs trail Toxic's."), 9.2),
+          ("e26_open", v_reveal, 11.0),
           ("e27_chart", v_chart, 24.0), ("e28_wld", v_wld, 11.8), ("e29_gaps", v_gaps, 15.3), ("e30_survive", v_survive, 8.2),
-          ("e31_why", v_llm, 17.8), ("e32_matters", v_design_matters, 14.8),
+          ("e31_why", v_llm, 17.8), ("e32_matters", v_design_matters, 15.6),
           # 5 conclusion: the question and the answer again, the thesis; then the bonus
           ("e33_bookend", v_bookend, 10.4), ("e34_close", v_close, 13.0), ("e35_train", v_train, 17.6)]
 RAW_SCENES = list(SCENES)                   # the scenes alone, without the chapter bar (for audit.py)
