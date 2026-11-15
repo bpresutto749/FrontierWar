@@ -1,28 +1,3 @@
-# FrontierWar: Core War Arena
-
-<!-- À écrire : une phrase. Ex. : un environnement Harbor où les agents de code frontière
-     restent sous le meilleur programme humain de Core War. -->
-
-## Run it in one line
-
-```bash
-git clone https://github.com/bpresutto749/FrontierWar && cd FrontierWar && harbor run -p harbor/corewar-hill -a opencode -m anthropic/claude-opus-5-5
-```
-
-Needs Docker, [Harbor](https://pypi.org/project/harbor/) (`uv tool install harbor`) and an
-API key in the shell (`export ANTHROPIC_API_KEY=...`, or `OPENAI_API_KEY` / `GEMINI_API_KEY`
-with `-m openai/<model>` / `-m gemini/<model>`). The reward is in
-`jobs/<job>/<trial>/verifier/reward.txt`.
-
-Check the scale (two more lines):
-
-```bash
-harbor run -p harbor/corewar-hill -a oracle   # the #1 human program: 1.0
-harbor run -p harbor/corewar-hill -a nop      # doing nothing: 0.0
-```
-
-<!-- Options utiles : -k 5 (5 essais) ; -p harbor/corewar-hill-public si Docker n'a pas le
-     contrôle de sortie réseau ; détails dans RUN_HARBOR.md. -->
 
 # FrontierWar: Core War Arena
 
